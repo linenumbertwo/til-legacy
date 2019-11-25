@@ -35,3 +35,12 @@ Xcode를 설치하고 설정에 들어가 cli를 설치하라고 했지만 영�
 ## 11.24
 - 맞춤법 봇을 heroku에 배포 했습니다.
 - 함께 공부하는 분과 "Greeny"라는 잔디봇 만들기 프로젝트를 시작하였습니다.
+
+## 11.25
+- Axios : 브라우저와 Node 환경에서 사용하는 Promise 기반의 HTTP Client로 사이트의 HTML을 가져올 때 사용할 라이브러리입니다.
+- Cheerio : Node.js 환경에서 JQuery 처럼 DOM Selector 기능들을 제공합니다. Axios의 결과로 받은 데이터에서 필요한 데이터를 추출하는데 사용하는 라이브러리 입니다.
+- Promise의 3가지 상태
+  - Pending(대기): 비동기 처리 로직이 아직 완료되지 않은 상태
+  - Fulfilled(이행): 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
+  - Rejected(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
+- [HTTP Request Headers](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers)
