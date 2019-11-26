@@ -44,3 +44,7 @@ Xcode를 설치하고 설정에 들어가 cli를 설치하라고 했지만 영�
   - Fulfilled(이행): 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
   - Rejected(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
 - [HTTP Request Headers](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers)
+
+## 11.26
+- Math 객체는 수학 상수와 함수를 위한 프로퍼티와 메소드를 제공하는 빌트인 객체이다. Math 객체는 생성자 함수가 아니다. 따라서 Math 객체는 정적(static) 프로퍼티와 메소드만을 제공한다.
+- '초보자를 위한 파이썬 300제' 내용을 바탕으로 자바스크립트 문제로 바꿔 풀어가면서 기본기를 다지는 중
