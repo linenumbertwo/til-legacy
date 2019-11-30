@@ -69,5 +69,9 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 // expected output: "The word "fox" is in the sentence"
 ```
 - `compareFunction`: 정렬 순서를 정의하는 함수. 생략하면 배열은 각 요소의 문자열 변환에 따라 각 문자의 유니 코드 코드 포인트 값에 따라 정렬됩니다.
-- [JavaScript Basic Function](Function of Basic JavaScript) 기초적인 것
-- 
+- [JavaScript Basic Function](Function of Basic JavaScript) 자바스크립트의 기초적인 문법들이 잘 정리되어있는 곳
+
+## 11.30
+- [프론트엔드 면접 문제](https://github.com/Songhun/Front-end-Developer-Interview-Questions/blob/master/Korean/README_KR.md?fbclid=IwAR2ILsRR9S0YW1nqkG2gHMykNFR6D6ziNLnuEskpaiKik3uXZeveERbk_Os)를 보며 공부를 해봤습니다.
+- 영어 공부와 `Function()`에 대해 찾아보고 여러가지 방법으로 사용해봤습니다.
+- [생활코딩](https://opentutorials.org/course/3085/18882)을 들었습니다.
