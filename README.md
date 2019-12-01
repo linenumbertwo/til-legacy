@@ -75,3 +75,7 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 - [프론트엔드 면접 문제](https://github.com/Songhun/Front-end-Developer-Interview-Questions/blob/master/Korean/README_KR.md?fbclid=IwAR2ILsRR9S0YW1nqkG2gHMykNFR6D6ziNLnuEskpaiKik3uXZeveERbk_Os)를 보며 공부를 해봤습니다.
 - 영어 공부와 `Function()`에 대해 찾아보고 여러가지 방법으로 사용해봤습니다.
 - [생활코딩](https://opentutorials.org/course/3085/18882)을 들었습니다.
+
+## 12.01
+- Function()과 친해지는 시간을 보냈습니다.
+- 프로그래머스 문제를 풀어보았는데 알고리즘식으로 돼있어서 푸는데 즐거움(?)이 있었습니다.
