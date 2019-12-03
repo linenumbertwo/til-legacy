@@ -85,3 +85,6 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
   - (내가)할 수 있는 방법 
     - 1순위. 자신-학교-기업과 3자협약을 맺는 것
     - 2순위. 특성화고졸업(예정)자
+
+## 12.03
+- Greeny코드를 완벽히 이해하며, Webhook으로 단방향 메세지를 보냈었지만 Botkit으로 바꾸려고 공부중입니다.
