@@ -88,3 +88,6 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 
 ## 12.03
 - Greeny코드를 완벽히 이해하며, Webhook으로 단방향 메세지를 보냈었지만 Botkit으로 바꾸려고 공부중입니다.
+
+## 12.04
+- node.js에서 크롤링 하는 것을 공부 중입니다.
