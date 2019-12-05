@@ -91,3 +91,6 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 
 ## 12.04
 - node.js에서 크롤링 하는 것을 공부 중입니다.
+
+## 12.05
+- 크롤링과 botkit을 이용하여 슬랙 봇을 만드는 중
