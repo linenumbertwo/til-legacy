@@ -120,4 +120,5 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
   
   > 1st, 3rd, 2nd
   ```
+  - 자바스크립트 책을 읽고, 생활코딩 node.js 및 css 강의를 봤습니다.
   
