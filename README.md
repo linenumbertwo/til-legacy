@@ -94,3 +94,30 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 
 ## 12.05
 - 크롤링과 botkit을 이용하여 슬랙 봇을 만드는 중
+
+## 12.06
+- 동기적 처리와 비동기적 처리 복습
+
+
+  - 동기적 처리(Synchronous): 위에서부터 아래로 순차적으로 실행됩니다.
+  ```
+  console.log("1st");
+  console.log("2nd");
+  console.log("3rd");
+  
+  > 1st, 2nd, 3rd
+  ```
+  - 비동기적 처리(Asynchronous): 동기적 코드의 실행이 완료되면 값을 반환합니다.
+  ```
+  console.log("1st");
+  
+  setTimeout(()=>{
+  console.log("2nd");
+  }, 0)
+  // 지연시간을 0초로 설정  
+  
+  console.log("3rd");
+  
+  > 1st, 3rd, 2nd
+  ```
+  
