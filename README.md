@@ -122,3 +122,6 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
   ```
   - 자바스크립트 책을 읽고, 생활코딩 node.js 및 css 강의를 봤습니다.
   
+## 12.07
+
+- 생활코딩 강의 시청 및 영어 공부
