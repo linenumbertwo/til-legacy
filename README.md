@@ -123,5 +123,9 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
   - 자바스크립트 책을 읽고, 생활코딩 node.js 및 css 강의를 봤습니다.
   
 ## 12.07
-
 - 생활코딩 강의 시청 및 영어 공부
+
+## 12.08
+- 생활코딩 Callback, Closure의 개념을 공부하였습니다.
+- [이곳에서](https://www.codingfactory.net/10401) 지역변수와 전역변수를 공부함
+- [이곳](https://emflant.tistory.com/66)을 참고하여 내부함수, 외부함수를 공부하여 이해를 도왔습니다.
