@@ -129,3 +129,23 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 - 생활코딩 Callback, Closure의 개념을 공부하였습니다.
 - [이곳에서](https://www.codingfactory.net/10401) 지역변수와 전역변수를 공부함
 - [이곳](https://emflant.tistory.com/66)을 참고하여 내부함수, 외부함수를 공부하여 이해를 도왔습니다.
+
+## 12.09
+- JavaScript console method
+```
+console.debug('log와 동일한 로그 메시지를 출력합니다.');
+console.error('에러 메시지를 출력합니다.');
+console.info('정보성 메시지를 출력합니다.');
+console.warn('경고성 메시지를 출력합니다.');
+```
+- continue와 break의 차이
+```
+for (i = 0; i < 10; i++){
+    if (i==3)
+    continue;
+    if (i==5)
+    break;
+    console.log(i)
+}
+OUPUT >> 0, 1, 2, 4
+```
