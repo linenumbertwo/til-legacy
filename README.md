@@ -149,3 +149,8 @@ for (i = 0; i < 10; i++){
 }
 OUPUT >> 0, 1, 2, 4
 ```
+## 12.10
+- 생활코딩 Node.js 강의 시청
+- URL의 Port값의 기본은 80이라는 것을 알게 되었음.
+- Node.js CRUD
+  - Create, Read, Update, Delete
