@@ -161,7 +161,7 @@ OUPUT >> 0, 1, 2, 4
 - Memorized English Word
 - Watched Node Js from channel "생활코딩"
 - Get to know the nodejs package pm2
-- pm2 commands
+- pm2 console method
 ```
 npm install pm2 -g // 설치
 pm2 start <name> // 서버 열기
