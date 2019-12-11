@@ -154,3 +154,8 @@ OUPUT >> 0, 1, 2, 4
 - URL의 Port값의 기본은 80이라는 것을 알게 되었음.
 - Node.js CRUD
   - Create, Read, Update, Delete
+
+## 12.11
+- Vscode 단축키: Alt+Cmd+위아래, Alt+Shift+I, Shift+Alt+위아래
+- 기본 영단어를 공부하였음
+- 생활코딩 Nodejs 완강
