@@ -138,7 +138,7 @@ console.error('에러 메시지를 출력합니다.');
 console.info('정보성 메시지를 출력합니다.');
 console.warn('경고성 메시지를 출력합니다.');
 ```
-- continue와 break의 차이
+- Difference between break and continue
 ```
 for (i = 0; i < 10; i++){
     if (i==3)
@@ -150,8 +150,8 @@ for (i = 0; i < 10; i++){
 OUPUT >> 0, 1, 2, 4
 ```
 ## 12.10
-- 생활코딩 Node.js 강의 시청
-- URL의 Port값의 기본은 80이라는 것을 알게 되었음.
+- Watched channel "생활코딩"
+- Get to know url basic port value is 80
 - Node.js CRUD
   - Create, Read, Update, Delete
 
@@ -159,7 +159,7 @@ OUPUT >> 0, 1, 2, 4
 - Read a book "JavaScript 200" and solved a problem
 - Vscode command: alt+cmd+up/down, alt+shift+I, shift+alt+up/down
 - Memorized English Word
-- Watched Node Js from channel "생활코딩"
+- Watched nodejs from youtube channel "생활코딩" 
 - Get to know the nodejs package pm2
 - pm2 console method
 ```
