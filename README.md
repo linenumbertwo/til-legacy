@@ -157,7 +157,7 @@ OUPUT >> 0, 1, 2, 4
 
 ## 12.11
 - Read a book "JavaScript 200" and solved a problem
-- Vscode command: Alt+Cmd+up/down, Alt+Shift+I, Shift+Alt+up/down
+- Vscode command: alt+cmd+up/down, alt+shift+I, shift+alt+up/down
 - Memorized English Word
 - Watched Node Js from channel "생활코딩"
 - Get to know the nodejs package pm2
