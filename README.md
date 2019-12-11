@@ -156,6 +156,17 @@ OUPUT >> 0, 1, 2, 4
   - Create, Read, Update, Delete
 
 ## 12.11
-- Vscode 단축키: Alt+Cmd+위아래, Alt+Shift+I, Shift+Alt+위아래
-- 기본 영단어를 공부하였음
-- 생활코딩 Nodejs 완강
+- Read a book "JavaScript 200" and solved a problem
+- Vscode command: Alt+Cmd+up/down, Alt+Shift+I, Shift+Alt+up/down
+- Memorized English Word
+- Watched Node Js from channel "생활코딩"
+- Get to know the nodejs package pm2
+- pm2 commands
+```
+npm install pm2 -g // 설치
+pm2 start <name> // 서버 열기
+pm2 monit // 모니터 열기
+pm2 list // pm2로 실행중인 서버 리스트 열기
+pm2 start <name> --watch // 서버 실행 중 코드 수정을 해도 재시동 없이 적용됨
+pm2 stop <name> // 서버 종료
+```
