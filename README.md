@@ -160,7 +160,7 @@ OUPUT >> 0, 1, 2, 4
 - Read "JavaScript 200" and solved problems
 - Vscode command: alt+cmd+up/down, alt+shift+I, shift+alt+up/down
 - Memorized English terms
-- Watched nodejs from youtube channel "생활코딩" 
+- Watched nodejs on youtube channel "생활코딩"
 - Get to know the nodejs package pm2
 - pm2 console method
 ```
