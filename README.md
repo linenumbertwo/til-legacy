@@ -174,5 +174,5 @@ pm2 stop <name> // 서버 종료
 
 ## 12.12
 - Watched all of the nodejs videos on "생활코딩"
-- Studied Memorized English terms and English writing
+- Studied and Memorized English terms and English writing
 - The language of this repository a little changed for English
