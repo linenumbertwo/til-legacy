@@ -171,3 +171,8 @@ pm2 list // pm2로 실행중인 서버 리스트 열기
 pm2 start <name> --watch // 서버 실행 중 코드 수정을 해도 재시동 없이 적용됨
 pm2 stop <name> // 서버 종료
 ```
+
+## 12.12
+- Watched all of the nodejs video on "생활코딩"
+- Studied Memorized English terms and English production
+- The language of this repository a little changed for English
