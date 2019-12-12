@@ -96,18 +96,19 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
 - 크롤링과 botkit을 이용하여 슬랙 봇을 만드는 중
 
 ## 12.06
-- 동기적 처리와 비동기적 처리 복습
+- Reviewed synchronous and asynchronous in JavaScript
 
 
-  - 동기적 처리(Synchronous): 위에서부터 아래로 순차적으로 실행됩니다.
+  - Synchronous: Execute(Run) sequentially from top to bottom 
   ```
   console.log("1st");
   console.log("2nd");
   console.log("3rd");
   
+  OUTPUT 
   > 1st, 2nd, 3rd
   ```
-  - 비동기적 처리(Asynchronous): 동기적 코드의 실행이 완료되면 값을 반환합니다.
+  - Asynchronous: If complete for synchronous code, return by value
   ```
   console.log("1st");
   
@@ -118,17 +119,18 @@ console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in t
   
   console.log("3rd");
   
+  OUPUT
   > 1st, 3rd, 2nd
   ```
   - 자바스크립트 책을 읽고, 생활코딩 node.js 및 css 강의를 봤습니다.
   
 ## 12.07
-- 생활코딩 강의 시청 및 영어 공부
+- Watched "생활코딩" from youtube and studied English
 
 ## 12.08
-- 생활코딩 Callback, Closure의 개념을 공부하였습니다.
-- [이곳에서](https://www.codingfactory.net/10401) 지역변수와 전역변수를 공부함
-- [이곳](https://emflant.tistory.com/66)을 참고하여 내부함수, 외부함수를 공부하여 이해를 도왔습니다.
+- Studied the concept of callback and closure in "생활코딩"
+- Studied [here](https://www.codingfactory.net/10401), local and global variable
+- Studied [here](https://emflant.tistory.com/66), inner and outer function
 
 ## 12.09
 - JavaScript console method
