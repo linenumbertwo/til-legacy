@@ -176,3 +176,12 @@ pm2 stop <name> // 서버 종료
 - Watched all of the nodejs videos on "생활코딩"
 - Studied and Memorized English terms and English writing
 - Write few TILs in English
+
+## 12.16
+- Watched MySQL on "생활코딩"
+- Tried Errors in MySQL
+- Errors and solutions
+  - `ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/tmp/mysql.sock’ (2)`
+    - Deleted and reinstalled MySQL
+  - `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)`
+    - Initialized MySQL
