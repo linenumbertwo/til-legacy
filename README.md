@@ -184,4 +184,4 @@ pm2 stop <name> // 서버 종료
   - `ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/tmp/mysql.sock’ (2)`
     - Deleted and reinstalled MySQL
   - `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)`
-    - Initialized MySQL
+    - Reset password in MySQL
