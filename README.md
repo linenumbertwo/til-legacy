@@ -190,3 +190,4 @@ pm2 stop <name> // 서버 종료
 - Watched all MySQL videos on "생활코딩"
   - Learned useful MySQL knowledge
     - Change database command `use dbname`
+- [Node.js](https://github.com/indante/Node.js) commit in github
