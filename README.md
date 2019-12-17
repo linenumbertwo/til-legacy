@@ -173,7 +173,7 @@ pm2 stop <name> // 서버 종료
 ```
 
 ## 12.12
-- Watched all of the nodejs videos on "생활코딩"
+- Watched all nodejs videos on "생활코딩"
 - Studied and Memorized English terms and English writing
 - Write few TILs in English
 
@@ -185,3 +185,8 @@ pm2 stop <name> // 서버 종료
     - Deleted and reinstalled MySQL
   - `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)`
     - Reset password in MySQL
+
+## 12.17
+- Watched all MySQL videos on "생활코딩"
+  - Learned useful MySQL knowledge
+    - Change database command `use dbname`
