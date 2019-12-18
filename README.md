@@ -193,4 +193,4 @@ pm2 stop <name> // 서버 종료
 - [Node.js](https://github.com/indante/Node.js) uploading on github repository
 
 ## 12.18
-- Refactoring Node.js-MySQL code and uploading on github repository
+- Refactoring [Node.js-MySQL](https://github.com/indante/Node.js-MySQL) code and uploading on github repository
