@@ -194,3 +194,8 @@ pm2 stop <name> // 서버 종료
 
 ## 12.18
 - Refactoring [Node.js-MySQL](https://github.com/indante/Node.js-MySQL) code and uploading on github repository
+
+## 12.19
+- Watched Node.js-express on "생활코딩"
+- Searched and learned jQuery code examples.
+  - [This site](https://www.w3schools.com/jquery/default.asp) good for learning jQuery
