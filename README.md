@@ -199,3 +199,7 @@ pm2 stop <name> // 서버 종료
 - Watched Node.js-express on "생활코딩"
 - Searched and learned jQuery code examples.
   - [This site](https://www.w3schools.com/jquery/default.asp) good for learning jQuery
+
+## 12.20
+- Tried various functions of jQuery
+  - jQuery's animate method was funny and amazing
