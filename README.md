@@ -203,3 +203,18 @@ pm2 stop <name> // 서버 종료
 ## 12.20
 - Tried various functions of jQuery
   - jQuery's animate method was funny and amazing
+  
+## 12.24
+- Watched all Node.js-express videos on "생활코딩"
+  - Security best practices for Express applications in production include
+    - Don’t use deprecated or vulnerable versions of Express    // 최신버전 사용하기
+    - Use TLS   // https 사용하기
+    - Use Helmet    // 보안이슈들을 자동으로 해결
+    `npm install --save helmet`
+    ```
+    var helmet = require('helmet');
+    app.use(helmet());
+    ```
+    - Use cookies securely    // 쿠키를 안전하게 사용해라
+    - Ensure your dependencies are secure   // 종속성 검사(?)
+    `npm i nsp -g`, `nsp check`
