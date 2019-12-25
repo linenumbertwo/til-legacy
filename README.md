@@ -218,3 +218,7 @@ pm2 stop <name> // 서버 종료
     - Use cookies securely    // 쿠키를 안전하게 사용해라
     - Ensure your dependencies are secure   // 종속성 검사(?)
     `npm i nsp -g`, `nsp check`
+
+## 12.25
+- [Node.js-Express](https://github.com/indante/Node.js-Express) uploading on github repository
+- Starting React from "생활코딩"
