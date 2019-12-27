@@ -222,3 +222,6 @@ pm2 stop <name> // 서버 종료
 ## 12.25
 - [Node.js-Express](https://github.com/indante/Node.js-Express) uploading on github repository
 - Starting React from "생활코딩"
+
+## 12.27
+- Watched React on "생활코딩"
