@@ -39,7 +39,10 @@
 
 ## 30일
 - AWS 배포를 끝내보려 했으나 하지 못함
-  - instance 생성
+  - Instance 생성
 - [노마드 온라인 해커톤](https://festa.io/events/885/)에 참여해볼 예정
 
-
+## 31일
+- Instance란? >> AWS에서 컴퓨터를 빌리는 것
+- [gitignore](https://docs.gitignore.io/)라는 편리한 사이트를 알게 됐음
+- [생활코딩](https://opentutorials.org/course/2717)에서 AWS 공부 중인데 너무 어려움ㅠ
