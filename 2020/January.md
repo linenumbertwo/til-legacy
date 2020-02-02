@@ -45,4 +45,4 @@
 ## 31일
 - Instance란? >> AWS에서 컴퓨터를 빌리는 것
 - [gitignore](https://docs.gitignore.io/)라는 편리한 사이트를 알게 됐음
-- [생활코딩](https://opentutorials.org/course/2717)에서 AWS 공부 중인데 너무 어려움ㅠ
+- [생활코딩](https://opentutorials.org/course/2717)에서 AWS 공부 중임
