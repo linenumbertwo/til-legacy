@@ -25,4 +25,5 @@
   > `cd /etc/mysql/mysql.conf.d` 경로로 들어가 `sudo vi mysqld.cnf`를 통해 bind-address 값 127.0.0.1을 0.0.0.0으로 수정했습니다.
   >  일시적인 오류였던건지, 시도한 방법을 통해 해결이 됐는지는 모르겠지만 해결 완료!
 - 무료 도메인을 받아오려 했지만 실패했습니다.
-  - [freenom](freenom.com)
+  - freenom을 바탕으로 AWS에 자신의 도메인을 적용시키는 글을 따라하려 했으나 freenom에서 로그인에 실패했습니다.
+  
