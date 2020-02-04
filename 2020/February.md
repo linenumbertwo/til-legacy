@@ -1,5 +1,5 @@
 ## 02일
-- AWS 서버 배포 시도를 하던 중 오류를 겪게 됌
+- AWS 서버 배포 시도를 하던 중 오류를 겪게 됨
   - ssh: connect to host (public DNS): Operation timed out
   - 문제 해결을 위해 삽질을 하고 있음
   
@@ -25,5 +25,7 @@
   > `cd /etc/mysql/mysql.conf.d` 경로로 들어가 `sudo vi mysqld.cnf`를 통해 bind-address 값 127.0.0.1을 0.0.0.0으로 수정했습니다.
   >  일시적인 오류였던건지, 시도한 방법을 통해 해결이 됐는지는 모르겠지만 해결 완료!
 - 무료 도메인을 받아오려 했지만 실패했습니다.
-  - freenom을 바탕으로 AWS에 자신의 도메인을 적용시키는 글을 따라하려 했으나 freenom에서 로그인에 실패했습니다.
-  
+  - freenom 사이트에서 오랜 시간 삽질을 했으며 로그인 에러가 발생했습니다.
+  > Google login error: Your social login could not be determined.<br>
+  > 검색해보니 쿠키를 활성화해야 한다길래 [*.]freedom.com을 쿠키 허용 값에 넣어주고 다시 시도해봤으나 실패했습니다.
+- 오늘의 깨달음: 공짜는 어렵다
