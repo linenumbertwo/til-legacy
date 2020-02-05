@@ -35,3 +35,5 @@
   - CSS의 기본적인 속성들을 복습하며 공부했습니다.
     - `!important`: 스타일 적용 우선 순위를 무시하고 `!important`를 선언한 속성에 우선 순위를 부여합니다.
     > `!important`는 세미콜론(;)을 붙여줘야 하며, `!important`는 스타일의 자연스런 흐름을 방해하기에 사용하지 않는게 좋습니다. `!important`를 사용하지 않는다는 것은 css를 제대로 이해하고 있다는 의미라는 걸 배웠습니다.
+    - `background: url()`로 배경 이미지를 넣으려 했으나 되지 않아서 많은 삽질을 통해 해결했습니다.
+    > express에서 정적 파일을 제공한다는 선언을 해야 했었고, `app.use(express.static(__dirname + '/public'))`를 통해 public 디렉토리 안에 있는 파일들(Image, CSS, JavaScript)을 제공합니다.
