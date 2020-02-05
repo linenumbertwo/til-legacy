@@ -29,3 +29,9 @@
   > Google login error: Your social login could not be determined.<br>
   > 검색해보니 쿠키를 활성화해야 한다길래 [*.]freedom.com을 쿠키 허용 값에 넣어주고 다시 시도해봤으나 실패했습니다.
 - 오늘의 깨달음: 공짜는 어렵다
+
+## 05일
+- CSS, Bootstrap으로 로그인, 회원가입 페이지를 디자인했습니다.
+  - CSS의 기본적인 속성들을 복습하며 공부했습니다.
+    - `!important`: 스타일 적용 우선 순위를 무시하고 `!important`를 선언한 속성에 우선 순위를 부여합니다.
+    > `!important`는 세미콜론(;)을 붙여줘야 하며, `!important`는 스타일의 자연스런 흐름을 방해하기에 사용하지 않는게 좋습니다. `!important`를 사용하지 않는다는 것은 css를 제대로 이해하고 있다는 의미라는 걸 배웠습니다.
