@@ -37,3 +37,9 @@
     > `!important`는 세미콜론(;)을 붙여줘야 하며, `!important`는 스타일의 자연스런 흐름을 방해하기에 사용하지 않는게 좋습니다. `!important`를 사용하지 않는다는 것은 css를 제대로 이해하고 있다는 의미라는 걸 배웠습니다.
     - `background: url()`로 배경 이미지를 넣으려 했으나 되지 않아서 많은 삽질을 통해 해결했습니다.
     > express에서 정적 파일을 제공한다는 선언을 해야 했었고, `app.use(express.static(__dirname + '/public'))`를 통해 public 디렉토리 안에 있는 파일들(Image, CSS, JavaScript)을 제공합니다.
+    
+## 06일
+- CSS, Bootstrap으로 CRUD 페이지 디자인 및 스타일을 적용했습니다.
+  - `opacity: number`: 0.0부터 1.0까지의 수를 넣어 요소의 투명도를 정할 수 있으며 숫자가 낮을수록 투명해집니다.
+  > `opacity`를 사용해서 배경사진과 함께 나타낼 수 있게 스타일을 적용했습니다.
+  - `!important`를 쓰지 않고 CSS를 적용하려 했으나 아직 코드의 흐름을 잘 이해하지 못해서 사용하게 되었습니다.
