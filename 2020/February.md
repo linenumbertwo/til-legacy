@@ -60,7 +60,7 @@
 ## 10일
 - background가 고정되지 않는 현상을 fixed 추가 하여 수정했습니다.
   > `background: url(diary.jpg) no-repeat center center fixed`로 수정
-- 일기장 번호를 DB의 id값으로 줘서 번호가 34,35 이렇게 나와서 id값을 초기화하는 시도를 해봤습니다.
+- 일기장 번호를 DB의 id값으로 줘서 번호가 34,35로 나와서 id값을 초기화하는 시도를 해봤습니다.
   ```
   ALTER TABLE [테이블명] AUTO_INCREMENT=[시작 값];
   SET @COUNT = 0;
