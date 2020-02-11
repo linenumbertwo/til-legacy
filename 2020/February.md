@@ -72,3 +72,4 @@
 ## 11일
 - edit, journals page에 background를 적용했습니다.
   > `app.use(express.static(__dirname + '/public'))` 상대경로로 지정해줬지만 `background: url(OOO.jpg)` 루트를 지정해주지 않아서  `background: url(/OOO.jpg)`로 수정했습니다.
+- diaryList page에서 delete기능을 넣으려고 시도 중입니다.
