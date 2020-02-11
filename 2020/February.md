@@ -68,3 +68,7 @@
   ```
   > 초기화는 된 것 같지만, 최종 id값이 남아있어서 실패로 끝이 났습니다.
 - 구글링을 통해 hbs의 `{{ @index }}`로 해보니 비록 시작 값은 0이지만, 내일 시작 값이 1이 될 수 있게 해보겠습니다.
+
+## 11일
+- edit, journals page에 background를 적용했습니다.
+  > `app.use(express.static(__dirname + '/public'))` 상대경로로 지정해줬지만 `background: url(OOO.jpg)`로 해서 id값을 갖는 페이지에서는 background가 적용되지 않았습니다. `background: url(/OOO.jpg)` root를 추가해줬더니 바로 됐습니다ㅠ
