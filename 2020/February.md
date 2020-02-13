@@ -73,3 +73,10 @@
 - edit, journals page에 background를 적용했습니다.
   > `app.use(express.static(__dirname + '/public'))` 상대경로로 지정해줬지만 `background: url(OOO.jpg)` 루트를 지정해주지 않아서  `background: url(/OOO.jpg)`로 수정했습니다.
 - diaryList page에서 delete기능을 넣으려고 시도 중입니다.
+
+## 12일
+- 청년취업지원금 신청 및 교육, 카드 발급을 했습니다.
+
+## 13일
+- React 공부를 시작했는데 내용 이해가 잘 가지 않음
+- 여러 가지 영어 영상들을 자막없이 보고 모르거나 호기심 갖는 단어들을 찾아보며 영어 공부를 했습니다.
