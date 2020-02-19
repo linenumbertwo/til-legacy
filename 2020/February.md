@@ -101,7 +101,7 @@
   ERROR:  While executing gem ... (Gem::FilePermissionError)
   You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
   ```
-  - 시스템 ruby를 이용하고 있기 때문에 권한이 없어서 gem설치가 안됐습니다.
+  - 오류에 대해 알아보니 시스템 ruby를 이용하고 있기 때문에 권한이 없어서 gem설치가 안됐습니다.
   sudo 를 통해 root 권한으로 실행하면 설치가 가능하겠지만, 보안상 이유로 권장하지 않는 설치법이기에 rbenv를 통해 에러 해결을 시도해봤습니다.
 
 - 시도 및 에러 
