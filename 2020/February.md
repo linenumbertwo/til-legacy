@@ -89,4 +89,37 @@
   margin-left: auto;
   margin-right: auto;
   ```
-- 
+- md5를 이용해 암호화를 시켰습니다.
+  > 암호화란? 평문을 암호문으로 변환하는 과정 `Ex) 평문("123456") → 암호화 → 암호문("aBD#fefa$fae!")`<br>
+  > 복호화란? 암호문을 평문으로 변환하는 과정 `Ex) 암호문("aBD#fefa$fae!!") → 복호화 → 평문("123456")`
+- username이 중복되는 버그가 있어서 Sequel Pro를 이용해 UNIQUE KEY값을 주어서 해결했습니다.
+
+## 19일
+- github blog를 만들기 위해 공식문서를 따라했습니다.
+  ``` 
+  $ gem install bundler
+  ERROR:  While executing gem ... (Gem::FilePermissionError)
+  You don't have write permissions for the /Library/Ruby/Gems/2.3.0 directory.
+  ```
+  - 시스템 ruby를 이용하고 있기 때문에 권한이 없어서 gem설치가 안됐습니다.
+  sudo 를 통해 root 권한으로 실행하면 설치가 가능하겠지만, 보안상 이유로 권장하지 않는 설치법이기에 rbenv를 통해 에러 해결을 시도해봤습니다.
+
+- 시도 및 에러 
+  - `rbenv install -l` 을 통해 최신 버전을 골라서 설치했습니다.
+    ```
+    $ rbenv install 2.7.0
+    ruby-build: using readline from homebrew // 여기서 설치가 멈춤
+    ```
+
+- `RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.7.0`
+	> 구글링을 통해 이러한 방법으로 시도해보니 정상적으로 설치가 이루어짐
+
+- rbenv로 글로벌 버전 2.7.0으로 변경 `rbenv global 2.7.0`
+  > `rbenv versions`로 변경 확인
+
+- 쉘 설정 파일에 들어간 후 `vim ~/.zshrc` 코드를 추가했습니다.
+  ```
+  [[ -d ~/.rbenv  ]] && \
+    export PATH=${HOME}/.rbenv/bin:${PATH} && \
+    eval "$(rbenv init -)"
+  ```
