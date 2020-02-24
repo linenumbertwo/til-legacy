@@ -123,3 +123,13 @@
     export PATH=${HOME}/.rbenv/bin:${PATH} && \
     eval "$(rbenv init -)"
   ```
+## 21~22일
+- 놀았음..
+
+## 23일
+- github push를 하던 중, 에러가 발생했습니다.
+```
+ERROR:
+remote: Permission to indante/indante.github.io.git denied to HOSEON-LEE. fatal: unable to access 'https://github.com/indante/indante.github.io.git/': The requested URL returned error: 403
+```
+> 현재 username은 indante인데 HOSEON-LEE로 되어 있어서 Keychain에 들어가서 github.com의 계정 이름과 비밀번호를 변경해줌
