@@ -128,8 +128,17 @@
 
 ## 23일
 - github push를 하던 중, 에러가 발생했습니다.
-```
-ERROR:
-remote: Permission to indante/indante.github.io.git denied to HOSEON-LEE. fatal: unable to access 'https://github.com/indante/indante.github.io.git/': The requested URL returned error: 403
-```
-> 현재 username은 indante인데 HOSEON-LEE로 되어 있어서 Keychain에 들어가서 github.com의 계정 이름과 비밀번호를 변경해줌
+	```
+	ERROR:
+	remote: Permission to indante/indante.github.io.git denied to HOSEON-LEE. fatal: unable to access
+	'MyUrl': The requested URL returned error: 403
+	```
+	> Keychain에 들어가 계정 이름과 패스워드를 변경해줘서 해결했음
+- 요즘 영어 공부를 많이 하고 있는데 영어 공부 기록장을 만들어야겠다.
+
+## 24일
+- 정보처리기능사 기출문제 은행에서 공부를 했음
+	> 분명 고등학교 때 논리회로 다 외웠던거 같은데 하나도 기억이 안남..;
+- "베껴쓰기로 끝내는 영작문"으로 빡세게 영어 공부를 했음
+- 엑셀에 적힌 다수의 url들을 방문하여 해당 html 코드에서 특정 문자열이 포함되어 있는지 확인하는 크롤러를 만들어 볼 예정
+	> Fact = 오늘은 검색만 함
