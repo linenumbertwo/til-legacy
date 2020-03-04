@@ -35,7 +35,7 @@
   
 ## 4일
 - Django 튜토리얼을 여러번 복습하다 보니 보이지 않던게 보였고 어느정도 익숙해진 것 같음
-- 일단 제가 생각하는 Django Web Frame Work의 작업 순서?를 정리해봤음
+- 내가 생각하는 Django Web Frame Work의 작업 순서?를 정리해봤음
 ```
 1. 폴더 생성
 $ django-admin startproject myProject .
