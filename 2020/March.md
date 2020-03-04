@@ -37,8 +37,8 @@
 - Django 튜토리얼을 여러번 복습하다 보니 보이지 않던게 보였고 어느정도 익숙해진 것 같음
 - 내가 생각하는 Django Web Frame Work의 작업 순서?를 정리해봤음
 ```
-1. 폴더 생성
-$ django-admin startproject myProject .
+1. 현재 경로에서 프로젝트 시작
+$ django-admin startproject my_project .
 
 2. 설정 변경
 TIME_ZONE=Asia/Seoul로 변경
