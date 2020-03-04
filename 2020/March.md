@@ -39,14 +39,19 @@
 ```
 1. 폴더 생성
 $ django-admin startproject myProject .
+
 2. 설정 변경
 TIME_ZONE=Asia/Seoul로 변경
+
 3. app 만들고 등록하기
 $ python3 manage.py startapp myApp
+
 4. model 생성, 설정, 통합하기
 $ python3 manage.py makemigrations
 $ python3 manage.py migrate
+
 5. Template 만들고, view, url 설정하기
+
 6. app 폴더에도 url 파일 생성해주고 설정하기
 ```
 - 전에 Node.js로 만들었던 CRUD를 Django를 이용해 똑같이 구현해보는 시간을 가짐
