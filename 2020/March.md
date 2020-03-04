@@ -34,5 +34,25 @@
   용량이 줄어들면 사용자입장에서는 더 빠르게 로딩할 수 있고 서버측에서는 트래픽이 줄어들기 때문에 많은 이점을 가질 수 있음
   
 ## 4일
+- Django 튜토리얼을 여러번 복습하다 보니 보이지 않던게 보였고 어느정도 익숙해진 것 같음
+- 일단 제가 생각하는 Django Web Frame Work의 작업 순서?를 정리해봤음
+```
+1. 폴더 생성
+$ django-admin startproject myProject .
+2. 설정 변경
+TIME_ZONE=Asia/Seoul로 변경
+3. app 만들고 등록하기
+$ python3 manage.py startapp myApp
+4. model 생성, 설정, 통합하기
+$ python3 manage.py makemigrations
+$ python3 manage.py migrate
+5. Template 만들고, view, url 설정하기
+6. app 폴더에도 url 파일 생성해주고 설정하기
+```
+- 전에 Node.js로 만들었던 CRUD를 Django를 이용해 똑같이 구현해보는 시간을 가짐
+  > 생각보다 설정할 내용이 많았고, 뭔가 
+- 전에 Node.js로 만들었던 CRUD를 Django를 이용해 똑같이 구현해보는 시간을 가짐봊
+
+
 
   
