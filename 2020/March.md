@@ -56,3 +56,5 @@ $ python3 manage.py migrate
 ```
 - 전에 Node.js로 만들었던 CRUD를 Django를 이용해 똑같이 구현해보는 시간을 가짐
   > 생각보다 설정할 내용이 많아서 어려웠음.. 내일 다시 도전해봐야겠음
+  
+## 5일
