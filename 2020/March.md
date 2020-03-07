@@ -58,3 +58,5 @@ $ python3 manage.py migrate
   > 생각보다 설정할 내용이 많아서 어려웠음.. 내일 다시 도전해봐야겠음
   
 ## 5일
+- Django Pattern = MVC? MTV?
+  - MVC(Model, View, Controller): 
