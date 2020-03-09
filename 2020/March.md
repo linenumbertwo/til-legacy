@@ -65,3 +65,6 @@ $ python3 manage.py migrate
   단점: Controller는 View와 강하게 연결되어 있어서 대규모 프로젝트에서 쉽게 분리할 수도 없고 코드 분석/수정이 힘들다는 단점이 있습니다.
   ```
   - MTV(Model-Template-View): MVC와 같지만 Django는 Template을 사용하기 때문에 MTV Pattern이 맞는 표현입니다.
+  
+## 6일
+오늘은 나의 생일이기에 메이플스토리와 롤을 하며 하루를 보냄 ^^
