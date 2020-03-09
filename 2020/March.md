@@ -67,4 +67,33 @@ $ python3 manage.py migrate
   - MTV(Model-Template-View): MVC와 같지만 Django는 Template을 사용하기 때문에 MTV Pattern이 맞는 표현입니다.
   
 ## 6일
-오늘은 나의 생일이기에 메이플스토리와 롤을 하며 하루를 보냄 ^^
+Today is my birthday, so I played Maple Story and League of Legends :)
+
+## 7~8일
+> showmethatcode는 함께 개발 공부를 하는 팀 이름이고 네 명으로 구성되어 있습니다.
+```
+저희는 매일 공부한 내용을 데일리 미팅에서 공유하고 Notion에 TIL, Action Plan을 적는 문서를 작성합니다.
+이렇게 하다가 Notion처럼 내용을 기록할 수 있는 웹을 만들어 보자 해서 해커톤(?)을 진행했습니다.
+디자이너, 프론트엔드, 백엔드 두 명으로 진행했으며 저는 백엔드를 담당했습니다.
+브랜치를 백엔드, 프론트엔드로 나눠서 작업했고 아무래도 이렇게 프로젝트를 처음부터 끝까지 진행하는게 처음이다보니 의미있고 재미있었습니다.
+```
+```
+Django로 작업을 했고 MySQL로 하기로 해서 기본 세팅을 하던 중 MySQL password 관련 오류가 발생해서 몇 시간동안 해결을 못해 SQLite로 넘어갔습니다.
+우선 제가 맡은 sharing, sharing_detail page에 필요한 모델 및 앱 생성을 했습니다.
+구글 로그인 환경변수 값 ~/.zshrc에 넣어주고 로그인 후 root page로 redirect 시켜주는 기능 구현을 했습니다.
+임의로 html 파일 만들어서 프론트 개발자님한테 파일 받으면 템플릿 적용 바로 할 수 있게 작업해 놨습니다.
+파일 받고 난 후, 코드만 넣으면 바로 될 줄 알았는데 HTML 파일에서 정적인 파일을 불러와야 할 수 있다는걸 알게 됐습니다.
+
+아직 기능 구현까지는 완성시키지 못했지만 차차 완성시켜 나갈 것이고 기능도 더 추가할 것입니다.
+```
+
+## 9일
+- 생애 처음으로 requirements.txt를 생성해 봄
+```
+# requirements 생성
+pip freeze > requirements.txt
+# 패키지 설치
+pip install -r requirements.txt
+```
+- HTML/CSS 코드 수정하신거 Template에 적용 및 업데이트
+- 이실직고하자면 거의 놀았음
