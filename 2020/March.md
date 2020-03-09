@@ -59,4 +59,6 @@ $ python3 manage.py migrate
   
 ## 5일
 - Django Pattern = MVC? MTV?
-  - MVC(Model, View, Controller): 
+  - MVC(Model-View-Controller): 개발 할 때 세 가지 형태로 역할을 나누어 개발하는 방법론입니다.
+  > 장점: 비지니스 처리 로직과 사용자 인터페이스 요소를 분리시켜 서로 영향없이 개발 하기 수월하다는 장점이 있습니다.
+  > 단점: Controller는 View와 강하게 연결되어 있어서 대규모 프로젝트에서 쉽게 분리할 수도 없고 코드 분석/수정이 힘들다는 단점이 있습니다.
