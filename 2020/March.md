@@ -114,4 +114,4 @@ be starved to death: 굶어죽다
 - 
 
 ## 15일
-- [회고](https://github.com/indante/TILs/blob/master/2020/retrospection.md)를 작성했
+- [회고](https://github.com/indante/TILs/blob/master/2020/retrospection.md)를 작성했음
