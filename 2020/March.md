@@ -182,3 +182,6 @@ class BaseModel(models.Model):
     class Meta:
         abstract = True
 ```
+- 코드 리뷰에서 개행을 넣어달라는 리뷰가 있었다.
+  - 위 코드에서 `from django.db import models` 아래에 개행이 한 칸인걸 두 칸으로 바꾸고, 문서의 끝에는 항상 개행 한 칸을 넣어야 한다는걸 알게 되었다.
+- iTerm2 Customiz를 했다. font, color를 변경하고 new line, highlighting 기능을 넣었다.
