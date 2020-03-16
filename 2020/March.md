@@ -130,3 +130,6 @@ class BaseModel(models.Model):
     class Meta:
         abstract = True
 ```
+
+## 15일
+- Django를 이용해 데일리 미팅 글 
