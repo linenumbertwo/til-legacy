@@ -168,4 +168,17 @@ def please(request):
             'error_message': error_message,
         }, json_dumps_params = {'ensure_ascii': True})
 ```
-- view를 어떻게 작성해야 할 지 며칠동안 감이 안잡혔는데 그래도 완성해서 기분이 매우 좋다
+- view를 어떻게 작성해야 할 지 며칠동안 감이 안잡혔는데 그래도 완성해서 기분이 매우 좋다.
+
+## 16일
+- 데일리 미팅 기능 구현한 걸 PR을 올리고 코드 리뷰를 받아서 알게된 점들을 코드로 공유해보겠다.
+```
+from django.db import models
+
+class BaseModel(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+```
