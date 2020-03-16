@@ -111,7 +111,22 @@ be starved to death: 굶어죽다
 ```
 
 ## 11일
-- 
+- Django 예제를 찾아서 여러가지 따라하고 내용을 이해하려고 공부 함
 
-## 15일
-- [회고](https://github.com/indante/TILs/blob/master/2020/retrospection.md)를 작성했음
+## 12~13일
+- 놀았음..
+
+## 14일
+- `on_delete=models.CASADE`란 모델 A 와 모델 B가 N:1 관계일 때, 모델A에 on_delete=models.CASADE 구문이 설정되어있으면, 모델 B의 어떤 레코드가 삭제되면 삭제될 모델 B의 레코드와 관련있는 모델 A의 레코드들도 연차적으로 삭제됩니다. 
+- 추상 모델(Abstract Model): Django model을 작성할 때 여러 테이블에 같은 형식의 필드(컬럼)이 있는 경우가 있다. 이럴 때, Abstract Model을 만들어 상속받으면 된다. 내가 생성한 추상 모델의 코드를 적어보겠다!!!
+```
+from django.db import models
+
+
+class BaseModel(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+```
