@@ -132,4 +132,40 @@ class BaseModel(models.Model):
 ```
 
 ## 15일
-- Django를 이용해 데일리 미팅 글 
+- Django를 이용해 데일리 미팅 글 작성 기능을 구현해냈다. 코드를 자랑해보겠다!
+```
+# views.py
+from django.shortcuts import render
+from django.http import JsonResponse
+from .models import Meeting, MeetingType
+from django.contrib.auth import get_user_model, get_user
+
+
+# /meetings/please/
+def please(request):
+    if request.method == 'POST':
+        done = request.POST.get('done', '')
+        in_progress = request.POST.get('in_progress', '')
+        obstacle = request.POST.get('obstacle', '')
+
+        error_message = ''
+
+        if done == '':
+            error_message = '지금까지 무엇을 하셨는지 입력해주세요!'
+        if in_progress == '':
+            error_message = '무엇을 하실건지 입력해주세요!'
+        if obstacle == '':
+            error_message = '예상되는 어려움을 적어주세요!'
+        
+        user = get_user(request)
+
+        if not error_message and user:
+            meeting = Meeting.objects.create(meeting_type=MeetingType.DAILY, done=done, in_progress=in_progress, obstacle=obstacle, user=user, team=user.team)
+            meeting.save()
+    
+        return JsonResponse({
+            'success': error_message == '',
+            'error_message': error_message,
+        }, json_dumps_params = {'ensure_ascii': True})
+```
+- view를 어떻게 작성해야 할 지 며칠동안 감이 안잡혔는데 그래도 완성해서 기분이 매우 좋다
