@@ -192,22 +192,71 @@ class BaseModel(models.Model):
 
 ## 18일
 장고 튜토리얼 말고 오늘은 장고걸스를 보며 공부를 하는데 기분이 이상했다. `reverse()`, `len()`, `pop()`, `append()` 등 프로그래밍을 처음 접할 때 많이 사용했었고
-신기해 하던 자신이 떠올랐다. 마침 피아노 연주 노래 들으면서 하는데 기분이 묘하다.
+신기해 하던 자신이 떠올랐다. 마침 피아노 연주 들으면서 공부 하는데 기분이 묘하다.
 - 전에는 리스트와 딕셔너리 각각 언제 써야할 지 몰랐는데 장고걸스에 간단하게 정리가 되어 있다.
   - 리스트: 아이템 정렬이 필요할 때
   - 딕셔너리: 키(key)과 값(value)이 서로 연관되어 있거나, 효과적으로 (키를 사용해서) 어떤 값을 찾을 때
     > 딕셔너리는 리스트와 유사하지만, 변경(mutable)할 수 있습니다. 딕셔너리가 만들어진 후에도, 그 값을 마음대로 변경할 수 있다는 뜻입니다. 키/값을 나중에 추가할 수 있습니다.
-  - `range()`한창 for문을 사용할 때 난 이게 함수인지 몰랐고 지금까지도 몰랐다. 지금이라도 알게 되서 다행이다;;
-  ```
-  # 인수 1개 - 시작 숫자를 지정해 주지 않으면 range 함수는 0부터 시작한다.
-  >>> list(range(5))
-  [0, 1, 2, 3, 4]
+- `range()`: 한창 for문을 사용할 때 난 이게 함수인지 몰랐고 지금까지도 몰랐다. 지금이라도 알게 되서 다행이다;;
+```
+# 인수 1개 - 시작 숫자를 지정해 주지 않으면 range 함수는 0부터 시작한다.
+>>> list(range(5))
+[0, 1, 2, 3, 4]
 
-  # 인수 2개 - 입력으로 주어지는 2개의 인수는 시작 숫자와 끝을 나타낸다. 단, 끝 숫자는 해당 범위에 포함되지 않는다.
-  >>> list(range(5,10))
-  [5, 6, 7, 8, 9]
+ # 인수 2개 - 입력으로 주어지는 2개의 인수는 시작 숫자와 끝을 나타낸다. 단, 끝 숫자는 해당 범위에 포함되지 않는다.
+>>> list(range(5,10))
+[5, 6, 7, 8, 9]
 
-  # 인수 3개 - 세 번째 인수는 숫자 사이의 거리를 말한다.
-  >>> range(1,10,3)
-  [1, 4, 7]
-  ```
+ # 인수 3개 - 세 번째 인수는 숫자 사이의 거리를 말한다.
+>>> range(1,10,3)
+[1, 4, 7]
+```
+- 장고(Django)란 무엇인가?
+여태껏 공부하면서 장고는 뭐지? 왜 만들었지? 이런 호기심을 품어본적이 없다. 그냥 당연하듯이 어떤 특성이 있는지도 모른채 공부만 했다. 앞으로는 Python, JavaScript, Django 등 공부를 하더라도 그 언어에 대한 호기심을 품고 공부해야겠다. [djangogirls](https://tutorial.djangogirls.org/ko/django/) 엄청 좋은 것 같다.
+- Model
+`class Post(models.Model)`는 모델을 정의하는 코드이다.
+`class`는 특별한 키워드로, 객체를 정의한다는 것을 알려준다. `Post`는 모델의 이름이고 항상 클래스 이름의 첫글자는 대문자로 써야 한다. `models`는 Post가 장고 모델임을 의미한다. 이 코드 때문에 장고는 Post가 데이터베이스에 저장되어야 한다고 알게 된다.
+- Django template extending(장고 템플릿 확장)
+템플릿 확장이란 웹사이트 안의 서로 다른 페이지에서 HTML의 일부를 동일하게 재사용할 수 있다는 뜻이다. 이 방법을 사용하면 동일한 정보/레이아웃을 사용하고자 할 때, 모든 파일마다 같은 내용을 반복해서 입력할 필요가 없게 된다.
+```
+# base.html
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+    <div class="page-header">
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+# post_list.html
+{% extends 'blog/base.html' %}
+
+{% block content %}    
+    {% for post in posts %}
+    <div class="post">
+        <div class="date">
+            <p>{{ post.published_date }}</p>
+        </div>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
+```
+위처럼 `base.html`에 반복되는 내용을 입력한다. 다른 HTML 파일에서 제일 위에 `{% extends <base 경로>%}`를 넣고 제일 마지막에 `{% endblock %}`을 선언해주면 `base.html`을 불러올 수 있다.
