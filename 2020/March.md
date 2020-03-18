@@ -260,4 +260,4 @@ class BaseModel(models.Model):
     {% endfor %}
 {% endblock %}
 ```
-위처럼 `base.html`에 반복되는 내용을 입력한다. 다른 HTML 파일에서 제일 위에 `{% extends <base 경로>%}`를 넣고 제일 마지막에 `{% endblock %}`을 선언해주면 `base.html`을 불러올 수 있다.
+위처럼 `base.html`에 반복되는 내용을 입력한다. 다른 HTML 파일에서 제일 위에 `{% extends <base 경로> %}`를 넣고 제일 마지막에 `{% endblock %}`을 선언해주면 `base.html`을 불러올 수 있다.
