@@ -243,7 +243,8 @@ class BaseModel(models.Model):
     </div>
 </body>
 </html>
-
+```
+```
 # post_list.html
 {% extends 'blog/base.html' %}
 
