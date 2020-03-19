@@ -270,6 +270,6 @@ class BaseModel(models.Model):
 
 - `|linebreaksbr`: 블로그 글 텍스트에서 행이 바뀌면 문단으로 변환하도록 하라는 의미입니다.
   > 행바뀜을 문단으로 변환하는 필터를 적용한다는 표현을 쓰기도 함
-- PythonAnywhere
+- PythonAnywhere<br>
 전에는 Heroku, AWS를 사용했었는데 이번에 장고걸스를 따라하면서 PythonAnywhere로 배포해봤습니다.
   > 개인적으로 Heroku, AWS보다 배포 과정이 매우 쉬워서 학습하는데 편리함이 있었음
