@@ -211,6 +211,7 @@ class BaseModel(models.Model):
 >>> range(1,10,3)
 [1, 4, 7]
 ```
+
 - 장고(Django)란<br>
 여태껏 공부하면서 장고는 뭐지? 왜 만들었지? 이런 호기심을 품어본적이 없다. 그냥 당연하듯이 어떤 특성이 있는지도 모른채 공부만 했다. 앞으로는 Python, JavaScript, Django 등 공부를 하더라도 그 언어에 대한 호기심을 품고 공부해야겠다. [djangogirls](https://tutorial.djangogirls.org/ko/django/) 엄청 좋은 것 같다.
 - Model<br>
@@ -218,6 +219,7 @@ class BaseModel(models.Model):
 `class`는 특별한 키워드로, 객체를 정의한다는 것을 알려준다. `Post`는 모델의 이름이고 항상 클래스 이름의 첫글자는 대문자로 써야 한다. `models`는 Post가 장고 모델임을 의미한다. 이 코드 때문에 장고는 Post가 데이터베이스에 저장되어야 한다고 알게 된다.
 - Django template extending(장고 템플릿 확장)<br>
 템플릿 확장이란 웹사이트 안의 서로 다른 페이지에서 HTML의 일부를 동일하게 재사용할 수 있다는 뜻이다. 이 방법을 사용하면 동일한 정보/레이아웃을 사용하고자 할 때, 모든 파일마다 같은 내용을 반복해서 입력할 필요가 없게 된다.
+
 ```
 # base.html
 {% load static %}
@@ -244,11 +246,12 @@ class BaseModel(models.Model):
 </body>
 </html>
 ```
+
 ```
 # post_list.html
 {% extends 'blog/base.html' %}
 
-{% block content %}    
+{% block content %}
     {% for post in posts %}
     <div class="post">
         <div class="date">
@@ -260,4 +263,13 @@ class BaseModel(models.Model):
     {% endfor %}
 {% endblock %}
 ```
+
 위처럼 `base.html`에 반복되는 내용을 입력한다. 다른 HTML 파일에서 제일 위에 `{% extends <base 경로> %}`를 넣고 제일 마지막에 `{% endblock %}`을 선언해주면 `base.html`을 불러올 수 있다.
+
+## 19일
+
+- `|linebreaksbr`: 블로그 글 텍스트에서 행이 바뀌면 문단으로 변환하도록 하라는 의미입니다.
+  > 행바뀜을 문단으로 변환하는 필터를 적용한다는 표현을 쓰기도 함
+- PythonAnywhere
+전에는 Heroku, AWS를 사용했었는데 이번에 장고걸스를 따라하면서 PythonAnywhere로 배포해봤습니다.
+  > 개인적으로 Heroku, AWS보다 배포 과정이 매우 쉬워서 학습하는데 편리함이 있었음
