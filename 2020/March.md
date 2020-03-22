@@ -273,3 +273,35 @@ class BaseModel(models.Model):
 - PythonAnywhere<br>
 전에는 Heroku, AWS를 사용했었는데 이번에 장고걸스를 따라하면서 PythonAnywhere로 배포해봤습니다.
   > 개인적으로 Heroku, AWS보다 배포 과정이 매우 쉬워서 학습하는데 편리함이 있었음
+
+## 20일
+
+이제 데일리 미팅에서 유저가 글 작성을 하면 그 유저에 맞는 이미지를 띄워주려고 시도했습니다.
+`{% static 'images/hoseon.png' %}`를 for문으로 돌리고 있는데 코드를 어떻게 짜야 동적으로 작동할지 모르겠습니다.
+`{% static 'iamges/{{ sharing.user }}.png' %}`로 그냥 해봤지만 역시나 안되고 하루종일 삽질해도 해결을 못했습니다.
+
+## 21일
+
+쉬려고 했던 날인데 할 게 없어서 코딩을 조금 했슴다. 이미지 띄우는건 나중으로 미루고(중요하지 않기에) 우선 유저가 글을 여러번 작성하지 못하게 
+하는 코드를 짜는데 이거는 생각보다 쉬울 것 같다고 생각을 했지만 코드로 나타내지 못했습니다. 그래서 내일은 집중해서 완성해서 코드를 올려보겠습니다.
+
+## 22일
+
+결과를 먼저 말씀 드리자면 기능은 구현 해냈지만 내다버린 시간이 너무 많았습니다. 이 기능은 당일 날 글을 작성하면 글 작성하는 박스가 사라지게끔(if문을 통해) 구현하는건데 
+전혀 상관없는 `def write(request):`에서 몇시간동안 삽질을 했고, 나중에서야 `def home(request):`에서 작업을 했습니다.
+
+```
+# views.py
+
+def home(request):
+    if request.method =='GET':
+        sharing_groups = SharingGroup.objects.all().order_by('-date')[:7]
+        sharing_today = Sharing.objects.filter(user=request.user, created_at__date=datetime.date.today()) 
+        can_check_in = len(sharing_today) == 0
+
+        return render(request, 'sharings.html', {
+            'groups': sharing_groups,
+            'can_check_in': can_check_in,
+        })
+```
+템플릿은 form을 `{% if can_check_in %} {% endif %}`로 감싸주고 데이터가 없으면 write가 나타나고 없으면 사라지는 식으로 기능을 구현했습니다.
