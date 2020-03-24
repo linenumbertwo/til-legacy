@@ -309,8 +309,12 @@ def home(request):
 
 ## 23일
 
-오늘 미팅 떄 저희가 개발한 웹페이지로 진행을 하고 싶어서 AWS 계정 생성하고 배포를 진행했습니다.
+오늘 미팅 때 저희가 개발한 웹페이지로 진행을 하고 싶어서 AWS 계정 생성하고 배포를 진행했습니다.
 EC2와 RDS로 구축을 진행 중인데 인스턴스에서 코드 clone 받고 세팅 하는데 에러가 발생했습니다.<br>
 `ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.`
 이 에러 말고도 Python Version Error, Django Version Error 가 있었습니다.<br>
 팀원분들과 함께 해결하려고 구글링 해서 시도를 해보기도 하고, 인스턴스 삭제해서 ubuntu version을 바꿔서 해보기도 하는 등 해봤지만 해결하지 못했습니다.
+
+## 24일
+슬슬 취업을 해야 할 것 같아서 이력서를 작성하고 있습니다.
+이미지 파일 코드 추가
