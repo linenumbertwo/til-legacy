@@ -287,7 +287,7 @@ class BaseModel(models.Model):
 
 ## 22일
 
-결과를 먼저 말씀 드리자면 기능은 구현 해냈지만 내다버린 시간이 너무 많았습니다. 이 기능은 당일 날 글을 작성하면 글 작성하는 박스가 사라지게끔(if문을 통해) 구현하는건데 
+결과를 먼저 말씀 드리자면 기능은 구현 해냈지만 허비한 시간이 너무 많았습니다. 이 기능은 당일 날 글을 작성하면 글 작성하는 박스가 사라지게끔(if문을 통해) 구현하는건데 
 전혀 상관없는 `def write(request):`에서 몇시간동안 삽질을 했고, 나중에서야 `def home(request):`에서 작업을 했습니다.
 
 ```
@@ -309,12 +309,34 @@ def home(request):
 
 ## 23일
 
-오늘 미팅 때 저희가 개발한 웹페이지로 진행을 하고 싶어서 AWS 계정 생성하고 배포를 진행했습니다.
+오늘 미팅 때 저희가 개발한 웹페이지로 진행을 하고 싶어서 AWS 계정 생성하고 배포를 진행했습니다.<br>
 EC2와 RDS로 구축을 진행 중인데 인스턴스에서 코드 clone 받고 세팅 하는데 에러가 발생했습니다.<br>
 `ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.`
 이 에러 말고도 Python Version Error, Django Version Error 가 있었습니다.<br>
-팀원분들과 함께 해결하려고 구글링 해서 시도를 해보기도 하고, 인스턴스 삭제해서 ubuntu version을 바꿔서 해보기도 하는 등 해봤지만 해결하지 못했습니다.
+해결하려고 구글링 해서 시도를 해보기도 하고, 인스턴스 삭제해서 ubuntu version을 바꿔서 해보기도 했지만 해결하지 못했습니다.
 
 ## 24일
-슬슬 취업을 해야 할 것 같아서 이력서를 작성하고 있습니다.
-이미지 파일 코드 추가
+
+제 목표는 3~4월쯤에 취업하는 것이기에 이력서를 준비하고 있습니다. 공부한 시간에 비해 쓸 내용도 없고 아는 것도 없어서 걱정이 됩니다.<br>
+이미지 파일을 동적으로 나타내는 코드를 구현하고 있습니다. 전부터 미루던 기능인데 이제서야 마무리 단계에 들어서서 시도해볼 예정입니다.
+
+## 25일
+
+중학교 동창 친구들과 모여서 놀기로 했기에 공부를 하지 못했지만 매우 즐거웠습니다👍
+
+## 26일
+
+정보처리기능사 필기 접수를 신청했고 공부 하고 있습니다. 아무래도 이번 해에 산업기능요원으로 취업해야 하기 때문에 자격증을 꼭 따야 합니다.<br>
+이미지 파일을 동적으로 나타내는 기능을 구현했고 이제 AWS에 배포만 끝낸다면 저희 미팅 때 사용할 수 있을 것 같습니다.
+
+```
+def user_profile_images(self):
+    get_user_profile_images = {
+        'user1@gmail.com': static('images/woosik.png'),
+        'user2@gmail.com': static('images/hyeonsu.png'),
+        'user3@gmail.com': static('images/hoseon.png'),
+        'user4@gmail.com': static('images/sangmin.png'),
+    }
+    return get_user_profile_images[self.email]
+```
+이렇게 메소드를 생성해서 템플릿에 넘겨주는 방법으로 구현했습니다.
