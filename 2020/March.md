@@ -339,4 +339,26 @@ def user_profile_images(self):
     }
     return get_user_profile_images[self.email]
 ```
+
 이렇게 메소드를 생성해서 템플릿에 넘겨주는 방법으로 구현했습니다.
+
+## 27일
+
+집중해서 정보처리 기능사 공부를 하고 문제를 풀어 봤는데 30문제 중 16문제 맞고 14문제 틀렸슴다 ㅋㅋㅋ..<br>
+비록 이태원 클라쓰를 보면서 공부 했지만 그래도 20개 이상 맞을 줄 알았지만 어림도 없었습니다.<br>
+반성의 의미로 집중해서 오답 노트 하고 복습 했습니다.<br>
+이태원 클라쓰 정말 재미도 있고 삶에 대한 교훈도 주는 정말..👍<br>
+Node.js를 이용해 완성도 높고 실용성 있는 Slack Bot을 만들기로 다짐했습니다.<br>
+[여기](https://www.freecodecamp.org/news/building-a-slackbot-with-node-js-and-slackbots-js/) 재밌는 내용이 있어서 따라하는데 오류가 발생해서 완성 하지 못했습니다.(오래 걸릴 것 같음)
+```
+Error: not_allowed_token_type
+    at /Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/slackbots/index.js:46:33
+    at Array.<anonymous> (/Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/vow/lib/vow.js:773:56)
+    at callFns (/Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/vow/lib/vow.js:24:35)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+Emitted 'error' event on Bot instance at:
+    at /Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/slackbots/index.js:46:19
+    at Array.<anonymous> (/Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/vow/lib/vow.js:773:56)
+    at callFns (/Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/vow/lib/vow.js:24:35)
+```
+`Emitted 'error' event on Bot instance at:`부분은 코드에 Error처리 해주니 사라졌는데 `Error: not_allowed_token_type`는 구글링으로 찾아보고 시도해봐도 도저히 해결 되지 않았습니다. 애초에 구글링해도 명확한 답을 찾지 못했기도 했지만요. 그래도 여기에 꽤 많은 시간을 부었는데 아까워서라도 계속 삽질해보려고 합니다^^
