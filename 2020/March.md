@@ -362,3 +362,10 @@ Emitted 'error' event on Bot instance at:
     at callFns (/Users/hoseon/DevRepo/slackBot-inspireNuggetsSlackBot/node_modules/vow/lib/vow.js:24:35)
 ```
 `Emitted 'error' event on Bot instance at:`부분은 코드에 Error처리 해주니 사라졌는데 `Error: not_allowed_token_type`는 구글링으로 찾아보고 시도해봐도 도저히 해결 되지 않았습니다. 애초에 구글링해도 명확한 답을 찾지 못했기도 했지만요. 그래도 여기에 꽤 많은 시간을 부었는데 아까워서라도 계속 삽질해보려고 합니다^^
+
+## 28일
+
+정보처리기능사 필기 문제집으로 한 챕터씩 끝내고 있습니다. 오늘은 제가 가장 싫어하면서도 어려워했던(이론 공부 안하고 기출 문제만 풀 때) 논리 회로 챕터였습니다.
+근데 막상 해보니 수학 공식이랑 비슷하기도 했고, 수학을 좋아했던 논리 회로 챕터를 재밌게 공부했습니다. 물론 봐도 이해 안가는 내용들이 있어서 몇몇 유형은 버리기로 했고
+아무튼 재미있었습니다. 집중적으로 해서 그런지 30문제 중 24문제 맞아서 기분이 좋았습니다.<br>
+그리고 어제 하던 삽질을 이어서 해봤지만 오늘도 해결하지 못했습니다. 그리고 Codeit에서 HTML/CSS를 공부 했습니다.
