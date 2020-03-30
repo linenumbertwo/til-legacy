@@ -369,3 +369,31 @@ Emitted 'error' event on Bot instance at:
 근데 막상 해보니 수학 공식이랑 비슷하기도 했고, 수학을 좋아했던 논리 회로 챕터를 재밌게 공부했습니다. 물론 봐도 이해 안가는 내용들이 있어서 몇몇 유형은 버리기로 했고
 아무튼 재미있었습니다. 집중적으로 해서 그런지 30문제 중 24문제 맞아서 기분이 좋았습니다.<br>
 그리고 어제 하던 삽질을 이어서 해봤지만 오늘도 해결하지 못했습니다. 그리고 Codeit에서 HTML/CSS를 공부 했습니다.
+
+
+
+## 29일
+
+정보처리기능사 전에 공부했던 내용들을 복습했습니다. 역시 한 번 공부했던걸 다시 하니까 못본?안본? 부분들도 다시 보게 되고 유익했습니다.<br>
+그리고 Node.js로 Slack Bot 만드는거 쉽게 만들 수 있을 줄 알았는데 못하고 있습니다. 계속 botkit에 의존하여 만들려고 해서 그런지 매달리는 시간이 많았습니다.
+특히 오늘은 밤을 새서 공부하는 내내 피곤했습니다. 망가진 생활 패턴을 맞추려고 친구와 함께 밤을 샜는데 그래도 중간에 졸지 않고 잘 했습니다.
+공부 시간은 약 6시간(앉아있던 시간)이고 오랜만에 친구랑 마인크래프트를 했는데 정말 재미있었습니다👍
+
+## 30일
+
+정보처리기능사 자료 표현과 연산 챕터를 공부했습니다. 주된 내용은 진수에 대한 내용이었고 어느정도 알고 있던 내용이라서 막힘 없이 재미있게 했습니다.
+오늘도 마찬가지로 Slack Bot을 만드려고 이것저것 해봤는데 성과가 없었습니다. 구글링 대신 해주는 봇을 만드려고 합니다. 쉽게 하지 못할거라고 예상은 했지만 
+생각보다 너무 안돼서 슬펐(?)습니다. 여러 가지 에러가 발생하긴 했는데 파악을 못한 내용도 있습니다.
+
+```
+WARNING: Your bot is operating without recommended security mechanisms in place.     
+Initialize your Botkit controller with a clientSigningSecret paramter to enable      
+verification that all incoming webhooks originate with Slack:                        
+                                                                                      
+var controller = new Botkit.slackbot({clientSigningSecret: <my secret from slack>})                                                   
+```
+
+이런식의 에러가 발생했는데 우째 해결할지 ;ㅁ;
+#### 속보
+`command 'markdown.extension.onBackspaceKey' not found`, `command 'markdown.extension.onPreview' not found`<br>
+지금 TIL 작성 중 에러가 발생했는데 익스텐션 업데이트 해주니까 해결됨.
