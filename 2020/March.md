@@ -381,7 +381,7 @@ Emitted 'error' event on Bot instance at:
 
 ## 30일
 
-정보처리기능사 자료 표현과 연산 챕터를 공부했습니다. 주된 내용은 진수에 대한 내용이었고 어느정도 알고 있던 내용이라서 막힘 없이 재미있게 했습니다.
+정보처리기능사 자료 표현과 연산 챕터를 공부했습니다. 주 내용은 진수에 대한 내용이었고 어느정도 알고 있던 내용이라서 막힘 없이 재미있게 했습니다.
 오늘도 마찬가지로 Slack Bot을 만드려고 이것저것 해봤는데 성과가 없었습니다. 구글링 대신 해주는 봇을 만드려고 합니다. 쉽게 하지 못할거라고 예상은 했지만 
 생각보다 너무 안돼서 슬펐(?)습니다. 여러 가지 에러가 발생하긴 했는데 파악을 못한 내용도 있습니다.
 
@@ -397,3 +397,9 @@ var controller = new Botkit.slackbot({clientSigningSecret: <my secret from slack
 #### 속보
 `command 'markdown.extension.onBackspaceKey' not found`, `command 'markdown.extension.onPreview' not found`<br>
 지금 TIL 작성 중 에러가 발생했는데 익스텐션 업데이트 해주니까 해결됨.
+
+## 31일
+
+정보처리기능사 명령어 및 제어 챕터를 공부했습니다. 다 처음 보는 내용들이었기에 단순히 암기만 했습니다. 그래서 재미가 없었습니다..
+Slack Bot 삽질하면서 `RTM` API에 대해 공부를 좀 했고 내일 더 공부해서 정리해보겠습니다.<br>
+그리고 친구들 만나서 밥 먹고 놀았습니다~ 아 그리고 여유 되면 3월 회고도 써보려고 합니다.
