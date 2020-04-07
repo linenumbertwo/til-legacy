@@ -68,3 +68,38 @@ rtm.on('message', (message) => {
 ```
 
 이렇게 쉬운걸 괜히 botkit에 집착해서 시간만 낭비했다.. Google URL Parameter 추출하려고 이것저것 공부하다가 시간을 보냈다.
+
+## 7일
+
+이제 구글링 대신해주는 봇을 만들기 위해 `axios`, `cheerio`를 이용하려고 했다. 왜 이렇게 생각했는지 모르겠지만 크롤링을 해야 한다고 생각했다.
+여러 웹 사이트를 크롤링 해보면서 공부했다. `axios`로 HTTP 파일을 가져오고, `cheerio`로 값을 빼내온다 라고 이해하고 있다.
+
+```
+// axios로 HTTP 가져오기
+const getHtml = async () => {
+  try {
+    return await axios.get("https://www.yna.co.kr/sports/all");
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+// cheerio로 원하는 값 가져오기
+getHtml()
+  .then(html => {
+    let ulList = [];
+    const $ = cheerio.load(html.data);
+    const $bodyList = $("div.headline-list ul").children("li.section02");
+
+    $bodyList.each(function(i, elem) {
+      ulList[i] = {
+          title: $(this).find('strong.news-tl a').text(),
+          url: $(this).find('strong.news-tl a').attr('href'),
+      };
+    });
+
+    const data = ulList.filter(n => n.title);
+    return data;
+  })
+  .then(res => log(res));
+```
