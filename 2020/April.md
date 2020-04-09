@@ -133,7 +133,7 @@ rtm.on('message', (message) => {
 
 <b>객체지향 자바스크립트의 원리</b>라는 책을 읽었다. 원시 타입과 참조 타입에 대해 공부했고 여러모로 처음 알게된 사실들이 있었다.
 
-```
+```js
 // 대표적인 녀석
 var color1 = "red";
 var color2 = color1;
@@ -149,7 +149,7 @@ console.log(color2); // red
 Googling-Bot에서 어제는 `!구글` 말고도 `!검색`, `세글자` 이렇게 세글자만 입력해도 반응했는데 이제는 `!구글`에만 반응하게 만들었다.<br>
 아직 여러가지 약점들이 많고 코드도 매우매우매우 허접해서 고칠게 많은 것 같다. 그래서 행복하다 ^^;
 
-```
+```js
 rtm.on('message', (message) => {
     var text = message.text
     var googling_keyword = text.slice(4);
