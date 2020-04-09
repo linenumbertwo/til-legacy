@@ -121,3 +121,41 @@ rtm.on('message', (message) => {
 
 슬랙 채널에서 메세지를 받아온 후, slice로 `!구글` 명령을 잘라내고 키워드만 빼내와서 링크에 넣어주는 방식이다.<br>
 동작은 되는데 조건에 `!구글` 명령어에만 반응할 수 있게, 공백 처리도 해줘야한다. 머리 회전이 안되므로 내일로 미룬다.
+
+## 9일
+
+#### 오늘의 TMI
+
+1. GitHub Repository에 License가 없으면 다른 사람들이 사용할 수 없다라는 사실을 알고 충격을 받았다.
+2. PR을 받을 때 커밋이 2개 이상인 경우에는 `Squash Merge` 아니라면 `Rebase Merge`
+
+#### 오늘의 TIL
+
+<b>객체지향 자바스크립트의 원리</b>라는 책을 읽었다. 원시 타입과 참조 타입에 대해 공부했고 여러모로 처음 알게된 사실들이 있었다.
+
+```
+// 대표적인 녀석
+var color1 = "red";
+var color2 = color1;
+
+console.log(color1); // red
+console.log(color2); // red
+
+color1 = "blue";
+
+console.log(color1); // blue
+console.log(color2); // red
+```
+Googling-Bot에서 어제는 `!구글` 말고도 `!검색`, `세글자` 이렇게 세글자만 입력해도 반응했는데 이제는 `!구글`에만 반응하게 만들었다.<br>
+아직 여러가지 약점들이 많고 코드도 매우매우매우 허접해서 고칠게 많은 것 같다. 그래서 행복하다 ^^;
+
+```
+rtm.on('message', (message) => {
+    var text = message.text
+    var googling_keyword = text.slice(4);
+    var call_sign = text.slice(0,3);
+    if(call_sign==="!구글"){
+        rtm.sendMessage(`google.com/search?q=${googling_keyword}`, message.channel)
+    }
+});
+```
