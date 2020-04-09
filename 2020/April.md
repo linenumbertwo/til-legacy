@@ -128,6 +128,7 @@ rtm.on('message', (message) => {
 
 1. GitHub Repository에 License가 없으면 다른 사람들이 사용할 수 없다라는 사실을 알고 충격을 받았다.
 2. PR을 받을 때 커밋이 2개 이상인 경우에는 `Squash Merge` 아니라면 `Rebase Merge`
+3. Markdown 사용할 때 Backtic(```)옆에 js를 붙이면 하이라이팅이 된다.
 
 #### 오늘의 TIL
 
