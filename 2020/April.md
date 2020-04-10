@@ -35,13 +35,13 @@
 
 1분기는 10점 만점에 6점을 줬다. 가장 큰 요소였던 게임에 흥미를 잃었고 코딩에 더 집중할 수 있는 발판이 될 수 있다고 생각한다.<br>
 
-#### 계획
+### 계획
 1. 친구한테 양해 구하고 보다 집중적으로 공부하기
 2. 아침에 일어나서 휴대폰 사용하지 않기(유튜브에 쓰는 시간이 많기에 일어나서 바로 씻고 카페가기)
 3. 데일리 목표 공유하기(오후 1시이전, 최소한의 목표)
     - ex) VSCode 열기, 슬랙에 아침 인사 하기 등 (시작이 어렵기 때문)
 
-#### showmethatcode 공동의 목표
+### showmethatcode 공동의 목표
 - earlybirds 필수 기록하기(일어난 시간)
     - 규칙적인 생활을 지키는게 목표
 
@@ -124,13 +124,13 @@ rtm.on('message', (message) => {
 
 ## 9일
 
-#### 오늘의 TMI
+### 오늘의 TMI
 
 1. GitHub Repository에 License가 없으면 다른 사람들이 사용할 수 없다라는 사실을 알고 충격을 받았다.
 2. PR을 받을 때 커밋이 2개 이상인 경우에는 `Squash Merge` 아니라면 `Rebase Merge`
 3. Markdown 사용할 때 Backtic(```)옆에 js를 붙이면 하이라이팅이 된다.
 
-#### 오늘의 TIL
+### 오늘의 TIL
 
 <b>객체지향 자바스크립트의 원리</b>라는 책을 읽었다. 원시 타입과 참조 타입에 대해 공부했고 여러모로 처음 알게된 사실들이 있었다.
 
@@ -152,11 +152,40 @@ Googling-Bot에서 어제는 `!구글` 말고도 `!검색`, `세글자` 이렇�
 
 ```js
 rtm.on('message', (message) => {
-    var text = message.text
-    var googling_keyword = text.slice(4);
-    var call_sign = text.slice(0,3);
+    var text = message.text // 슬랙 전체 메세지 
+    var googling_keyword = text.slice(4); // 검색할 내용 
+    var call_sign = text.slice(0,3); // !구글 
     if(call_sign==="!구글"){
         rtm.sendMessage(`google.com/search?q=${googling_keyword}`, message.channel)
     }
 });
 ```
+
+## 10일
+
+Googling-Bot을 완성했다. 좋은 코드로 만들지 못한게 아쉽지만 원하는 기능을 구현했다는거에 만족하고 있다. 어떻게 보면 내가 만든 슬랙 봇 중에서 그나마 실용성이 있는 것 같기 때문이다. 오늘은 공백을 `+`로 치환해주는 작업을 했다. 치환하는 이유는 구글 검색을 할 때 쿼리에서 공백을 `+`로 표현하기 때문이다. 최종적으로 `replace()`를 사용했고 이를 위해 <b>정규표현식</b>을 공부했다.
+
+```js
+require('dotenv').config();
+const { RTMClient } = require('@slack/client');
+const token = process.env.SLACK_TOKEN
+const rtm = new RTMClient(token);
+
+rtm.start();
+
+rtm.on('message', (message) => {
+    var text = message.text // 슬랙 전체 메세지
+    var googling_keyword = text.slice(4); // 검색할 키워드
+    var googling_detail_keyword = googling_keyword.replace(' ',"+") // 공백을 + 로 치환
+    var call_sign = text.slice(0,3); // !구글
+    console.log(googling_detail_keyword);
+    if(call_sign==="!구글"){
+        rtm.sendMessage(`https://www.google.com/search?q=${googling_detail_keyword}`, message.channel)
+    }
+});
+```
+최종적인 코드는 이러하고 [여기](https://github.com/indante/Googling-Bot)에 올렸슴다.<br>
+### 시간복잡도
+> 알고리즘이 문제를 해결하기 위한 연산(시간)의 횟수를 말한다.
+
+시간복잡도를 공부하고 있는데 뭔지 감을 못잡았다. <b>피보나치 연산</b>, <b>Big O 표기법</b> 등 내일 더 공부해봐야겠다. 
