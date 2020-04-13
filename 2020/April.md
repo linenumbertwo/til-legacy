@@ -198,4 +198,8 @@ Googling-Bot을 조금 더 나은 방향으로 개선해보는 시간을 가졌�
 - g: 발생할 모든 패턴에 대한 전역 검색
 - i: 대/소문자 구분 안함
 
-[Googling-Bot](https://github.com/indante/Googling-Bot) 사용법을 정리했다.
+[Googling-Bot](https://github.com/indante/Googling-Bot) 사용법을 정리했다.<br>
+
+## 13일
+
+이제 정보처리기능사 필기 시험 일주일 전이라 기출문제를 많이 풀어보고 있슴. <b>이기적</b>을 통해 모바일로도 시간 날 때마다 풀어보고 있는데 좀처럼 점수가 안나와서 문제임 100점 중 60점만 넘기면 되는데.. 오늘 정보처리기능사 공부 시간은 약 3시간 정도 했다. 그리고 Googling-Bot이 Slack Thread에서는 작동되지 않아서 Event가 있나 찾아보고 시도해봤지만 성공하지 못했다. 그 외에 <b>showmethatcode</b> Sprint 작업이 있어서 삽질만 했다. 오늘 총 공부시간? 카페에 있던 시간은 약 5시간 30분 정도 된다.
