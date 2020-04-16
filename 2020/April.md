@@ -207,3 +207,24 @@ Googling-Bot을 조금 더 나은 방향으로 개선해보는 시간을 가졌�
 ## 15일
 
 Googling-Bot이 갑자기 오류가 나서 제대로 작동되지 않는다. 그래서 해결하려고 삽질좀 하는데 해결하지 못했다. 당장 다음 주에 정보처리기능사 시험이라 오늘 하루는 기출문제를 계속 풀었고 평균적으로 7~80점이 나와서 걱정은 조금 사라졌다.
+
+## 16일
+
+### Googling-Bot
+
+종합적으로 여러가지 에러들이 발생하고 있다.
+
+```js
+// Error 1
+https://www.google.com/search?q=+didn’t unfurl https://www.google.com/search?q= because it was already shared in this channel quite recently (within the last hour) and I didn’t want to clutter things up.
+
+// Error 2
+TypeError: Cannot read property ‘slice’ of undefined
+var korean_googling_keyword = text.slice(4);
+```
+정확한 원인이 뭔지는 모르겠다. 에러가 단순히 한 줄만 뜨는게 아니라 코드가 실행되고 있는 동안 while문이 도는 것 처럼 계속 발생한다.
+작동 전에 시도했던건 `npm update`를 해준 것 밖에 없는데 갑자기 작동이 된다. 여러 번 테스트해봐야 알 수 있을 것 같다.
+
+### 정보처리기능사
+
+오늘은 정보처리기능사 기출문제만 약 10번 정도 푼 것 같다. 점수대는 평균 80점 정도로 올랐고 문제 정답을 아예 외워버리고 있다. 그래도 안정권으로 들어 와서 다행이다.
