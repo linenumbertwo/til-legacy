@@ -229,3 +229,24 @@ var korean_googling_keyword = text.slice(4);
 ### 정보처리기능사
 
 오늘은 정보처리기능사 기출문제만 약 10번 정도 푼 것 같다. 점수대는 평균 80점 정도로 올랐고 문제 정답을 아예 외워버리고 있다. 그래도 안정권으로 들어 와서 다행이다.
+
+## 17일
+
+### Googling-Bot
+
+특수기호가 검색되지 않는 점을 수정했고 이로 인해 코드도 더욱 깔끔해졌다. `encodeURIComponent`를 통해 인코딩을 해줬다.
+- `encodeURI`: A-Z a-z 0-9 - _ . ! ~ * ' ( ) 등을 제외하고 인코딩하는 함수
+- `encodeURIComponent`: 모든 문자를 인코딩하는 함수
+처음엔 두 함수가 헷갈렸지만 찾아보니 명확해졌다. 느낌표가 인코딩 되지 않는게 아쉬웠지만 그래도 코드가 간결해져서 좋다.
+
+```
+// 기존엔 여섯 줄 이었음
+var korean_call_sign = text.slice(0,3);
+var korean_googling_keyword = encodeURIComponent(text.slice(4));
+var english_call_sign = text.slice(0,7)
+var english_googling_keyword = encodeURIComponent(text.slice(8));
+```
+
+### 정보처리기능사
+
+오늘도 기출문제 여러 번 풀었는데 다 합격 받았다!
