@@ -239,7 +239,7 @@ var korean_googling_keyword = text.slice(4);
 - `encodeURIComponent`: 모든 문자를 인코딩하는 함수
 처음엔 두 함수가 헷갈렸지만 찾아보니 명확해졌다. 느낌표가 인코딩 되지 않는게 아쉬웠지만 그래도 코드가 간결해져서 좋다.
 
-```
+```js
 // 기존엔 여섯 줄 이었음
 var korean_call_sign = text.slice(0,3);
 var korean_googling_keyword = encodeURIComponent(text.slice(4));
