@@ -253,7 +253,6 @@ var english_googling_keyword = encodeURIComponent(text.slice(8));
 
 ## 18일
 
-### Sharing 1st Sprint
 <b>showmethatcode</b> 페이지에 추가 작업을 하려고 마음 먹은 날이다. 새로운 Branch를 생성 중 Branch Naming에 대해 찾아봤다.
 
 ### Branch Naming
