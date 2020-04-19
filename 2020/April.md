@@ -250,3 +250,30 @@ var english_googling_keyword = encodeURIComponent(text.slice(8));
 ### 정보처리기능사
 
 오늘도 기출문제 여러 번 풀었는데 다 합격 받았다!
+
+## 18일
+
+### Sharing 1st Sprint
+<b>showmethatcode</b> 페이지에 추가 작업을 하려고 마음 먹은 날이다. 새로운 Branch를 생성 중 Branch Naming에 대해 찾아봤다.
+
+### Branch Naming
+
+#### Master Branch
+배포(Release) 이력을 관리하기 위해 사용. 즉, 배포 가능한 상태만을 관리한다.
+
+#### Develop Branch
+기능 개발을 위한 브랜치들을 병합하기 위해 사용. 즉, 모든 기능이 추가되고 버그가 수정되어 배포 가능한 안정적인 상태라면 develop 브랜치를 ‘master’ 브랜치에 병합(merge)한다. 평소에는 이 브랜치를 기반으로 개발을 진행한다.
+
+#### Feature Branch
+feature 브랜치는 새로운 기능 개발 및 버그 수정이 필요할 때마다 ‘develop’ 브랜치로부터 분기한다. feature 브랜치에서의 작업은 기본적으로 공유할 필요가 없기 때문에, 자신의 로컬 저장소에서 관리한다. 개발이 완료되면 ‘develop’ 브랜치로 병합(merge)하여 다른 사람들과 공유한다.
+
+#### Relase Branch
+배포를 위한 전용 브랜치를 사용함으로써 한 팀이 해당 배포를 준비하는 동안 다른 팀은 다음 배포를 위한 기능 개발을 계속할 수 있다. 즉, 딱딱 끊어지는 개발 단계를 정의하기에 아주 좋다.
+
+#### Hotfix Branch
+출시 버전에서 발생한 버그를 수정 하는 브랜치
+
+> 자세한 내용은 [여기](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)에서 볼 수 있다.<br>
+----------------
+
+오랜만에 장고를 다뤄서 낯설었다. 가상 환경 설정도 안하고, 환경 변수 세팅하는데도 오래 걸렸다. 세팅 다 끝내고 코드 실행해서 메인 페이지에 접속하는데 들어가지지 않는다.. 원인을 모르겠고 해결을 못한 상태이다.
