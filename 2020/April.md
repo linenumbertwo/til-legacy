@@ -291,4 +291,8 @@ feature 브랜치는 새로운 기능 개발 및 버그 수정이 필요할 때�
 
 ## 22일
 
-[showmethatcode](https://showmethatcode.team/detail/2) 페이지에서 비밀글로 작성 기능을 구현하려고 노력 했다. 지금은 권한이 없어도 접속 되지만 이 기능을 구현하고 나면 달라질 것 이다. 오늘 알게 된 내용은 여러가지로 삽질을 하다가 HTML checkbox를 추가하고, checkbox를 눌렀는지 안눌렀는지의 여부를 확인하고 그 데이터를 통해  비밀글로 작성될 지 판단된다. 그 데이터를 가져오기 위해서 view에서 `checkbox = request.POST.get('test')`로 가져오고 print 찍어보니 데이터가 가져와졌다. 이걸로 내일 완성지을 수 있을 것 같다.
+[showmethatcode](https://showmethatcode.team/) 페이지에서 비밀글로 작성 기능을 구현하려고 노력 했다. 지금은 권한이 없어도 접속 되지만 이 기능을 구현하고 나면 달라질 것 이다. 오늘 알게 된 내용은 여러가지로 삽질을 하다가 HTML checkbox를 추가하고, checkbox를 눌렀는지 안눌렀는지의 여부를 확인하고 그 데이터를 통해  비밀글로 작성될 지 판단된다. 그 데이터를 가져오기 위해서 view에서 `checkbox = request.POST.get('test')`로 가져오고 print 찍어보니 데이터가 가져와졌다. 이걸로 내일 완성지을 수 있을 것 같다.
+
+## 23일
+
+기대와 다르게 완성하지 못했음.. 또 다른 방안을 생각해냈는데 모델에 checkbox 관련 필드를 생성해서 해보려고 한다.
