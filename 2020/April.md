@@ -300,3 +300,26 @@ feature 브랜치는 새로운 기능 개발 및 버그 수정이 필요할 때�
 ## 24일
 
 우선 `is_secret`라는 필드를 생성하고 checkbox 여부를 데이터로 담으려고 했다. 첫번째로 모델 필드 타입을 `BooleanField`로 했는데 체크박스를 누르지 않을 시, Null 값이 나와서 제대로 값이 들어가지 않음.. 여러모로 시도해보다가 최종적으로 `NullBooleanField`로 변경하고 누르지 않을 시 Null값이 들어가는 방법으로 해보고 있다. 또 완성은 못했는데 내일..은 약속이 있으니 모레 완성할 수 있지 않을까 싶다!
+
+## 26일
+
+checkbox를 체크하면 on이 출력되고 체크하지 않으면 Null이 출력 된다. 그래서 `is_secret = request.POST.get('is_secret', '')  == 'on'`값을 줘서 True로 반환시킨다. 그리고
+
+```py
+if request.user.is_authenticated:
+  is_team_member = request.user.is_team_member
+else:
+  is_team_member = False
+# is_team_member = request.user.is_team_member if request.user.is_authenticated else False // 삼항연산자도 알게 됐다.
+```
+로 팀에 속해있는 유저인지 판별하는 변수를 생성하고 템플릿에 넘겨준다. 이 코드를 이용해서
+
+```
+{% if sharing.is_secret and not is_team_member %}
+  비밀글임
+{% else %}
+  {{ sharing.til|linebreaksbr }}
+{% endif %}
+```
+
+비밀글(is_secret)로 작성했는데 팀 멤버가 아닐 시 내용이 보여지지 않는 식의 코드를 구현했다. 도움을 받긴 했지만 그래도 내용을 들으면서 바로바로 이해가 됐다.
