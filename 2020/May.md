@@ -12,3 +12,47 @@
 
 ## 14일
 정보처리기능사 실기 책이 도착해서 가벼운 마음으로 공부해봤는데 엄청나게 어렵다. 그래도 코딩에 대한 얘기도 나오고 충분히 흥미로웠지만 알고리즘 순서도에 막막함을 느끼고 있다. 그래서 이기적 책에 나와있는 무료 강의로 들으면서 병행하고 있다.
+
+## 15일
+오늘도 역시나 정보처리기능사 순서도 공부를 했지만 아직도 감이 잘 안잡힌다.
+
+### JavaScript 
+> [벨로퍼트](https://learnjs.vlpt.us/)에서 공부했다.
+
+#### null, undifined
+> null과 undefined 는 둘 다 값이 없음을 의미하는건 맞는데, null 은 우리가 없다고, 고의적으로 설정하는 값을 의미하고, undefined 는 우리가 설정을 하지 않았기 때문에 없는 값을 의미합니다.
+
+#### var, const, let
+> 가급적 const, let 을 사용하자.
+
+#### && , ||
+> && = AND, || = OR
+
+#### 논리 연산자
+
+```js
+const value = !((true && false) || (true && false) || !false);
+
+# 논리 연산자 순서 = NOT > AND > OR
+# 위 value의 결과값은 !true
+```
+
+#### 객체 비구조화 할당
+
+```js
+function print(hero) {
+  const { alias, name, actor } = hero;
+  const text = `${alias}(${name}) 역할을 맡은 배우는 ${actor} 입니다.`;
+  console.log(text);
+}
+```
+
+#### 배열
+
+Object.entries: [[키, 값], [키, 값]] 형태의 배열로 변환<br>
+Object.keys: [키, 키, 키] 형태의 배열로 변환<br>
+Object.values: [값, 값, 값] 형태의 배열로 변환
+
+---
+
+알고 있던 내용을 더 자세하게 알 수 있어서 유익했고 즐거웠다.
