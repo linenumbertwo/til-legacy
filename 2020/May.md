@@ -56,3 +56,25 @@ Object.values: [값, 값, 값] 형태의 배열로 변환
 ---
 
 알고 있던 내용을 더 자세하게 알 수 있어서 유익했고 즐거웠다.
+
+## 16일
+
+내가 Diary를 만들 때는 User 모델을 따로 만들었는데 알고 보니 Django에는 User모델이 기본적으로 있었다.
+
+```py
+from django.shortcuts import render
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User # 선언해주고
+
+def sign_up(request):
+  if request.method == 'POST':
+    user_id = request.POST.get('sign_up_id', '')
+    user_pw = request.POST.get('sign_up_pw', '')
+    user = User.objects.create_user(user_id, '', user_pw) # .create_user()를 통해 회원가입이 이루어진다. 패스워드 암호화도 자동으로 된다.
+    user.save()
+    return render(request, 'sign_up.html', {
+    });
+```
+
+Django.. 알면 좋지만 모르면 호구가 되는 느낌..이 든다!
