@@ -57,7 +57,7 @@ Object.values: [값, 값, 값] 형태의 배열로 변환
 
 알고 있던 내용을 더 자세하게 알 수 있어서 유익했고 즐거웠다.
 
-## 16일
+## 17일
 
 내가 Diary를 만들 때는 User 모델을 따로 만들었는데 알고 보니 Django에는 User모델이 기본적으로 있었다.
 
@@ -78,3 +78,8 @@ def sign_up(request):
 ```
 
 Django.. 알면 좋지만 모르면 호구가 되는 느낌..이 든다!
+
+## 18일
+
+계속 회원가입 페이지가 잘 나타나다가 오류가 발생하고가 반복됐다.<br>
+`The view accounts.views.sign_up didn't return an HttpResponse object. It returned None instead.` 이 에러가 발생하는데 왜 발생하는지 모르겠다.. 그래서 현재 카페에 있고 새벽까지 조금 더 해볼 예정이다..
