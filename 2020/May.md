@@ -99,7 +99,11 @@ class Diary(models.Model):
 ### 로그인 인증
 
 ```py
-from django.contrib.auth import authenticate, login # 선언
+from django.shortcuts import render, redirect
+from django.conf import settings
+from django.contrib.auth.models import User
+from django.contrib.auth import get_user, authenticate, login # 이것이 핵심
+from diary.models import Diary
 
 def sign_in(request):
     if request.method == 'GET':
