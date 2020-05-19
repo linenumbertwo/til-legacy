@@ -83,3 +83,50 @@ Django.. 알면 좋지만 모르면 호구가 되는 느낌..이 든다!
 
 계속 회원가입 페이지가 잘 나타나다가 오류가 발생하고가 반복됐다.<br>
 `The view accounts.views.sign_up didn't return an HttpResponse object. It returned None instead.` 이 에러가 발생하는데 왜 발생하는지 모르겠다.. 그래서 현재 카페에 있고 새벽까지 조금 더 해볼 예정이다..
+
+## 19일
+
+### `settings.AUTH_USER_MODEL` VS. `get_user_model()`
+
+```py
+class Diary(models.Model):
+    #1. user = models.ForeignKey(settings.AUTH_USER_MODEL , on_delete=models.CASCADE)
+    #2. user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    ...
+```
+기존에는 1번 코드를 사용했으나 [Stack Overflow](https://stackoverflow.com/questions/24629705/django-using-get-user-model-vs-settings-auth-user-model)에서 2번의 코드가 더 좋다고 해서 수정했다.(영어라 잘 해석한건지는 모르겠다..)<br>
+
+### 로그인 인증
+
+```py
+from django.contrib.auth import authenticate, login # 선언
+
+def sign_in(request):
+    if request.method == 'GET':
+        user = get_user(request)
+        return render(request, 'sign_in.html', {
+        
+        });
+    if request.method == 'POST':
+        user_id = request.POST['user_id']
+        user_pw = request.POST['user_pw']
+        error_message = '아이디 혹은 비밀번호를 확인해주세요'
+        user = authenticate(request, username=user_id, password=user_pw)
+
+        if user_id or user_pw == '': # 아이디 혹은 비밀번호가 입력되지 않았을 시
+            error_message = error_message # 위의 error_message를 저장
+
+        if user is not None: # 유저 데이터가 있다면
+            login(request, user) # 조금 검색해봐야 할 것 같다(코드 흐름을 보면 대충 역할인지 느껴지는?)
+            return redirect('/diary')
+
+        else: # 오류처리
+            error_message = error_message
+            return render(request, 'sign_in.html', {
+                'error_message': error_message
+            })
+```
+혼자 코드를 짜서 해보려고 했으나 계속 `AnonymousUser`가 떠서 힘들었는데 검색해보니 authenticate, login 을 이용한 방법이 있었다.<br>
+
+### Slang
+창모의 노래를 듣다가 One hunnit 이 들려 궁금해서 검색해봤는데 100을 의미한다고 한다. I keep it 100 = I keep it real = I keep it hunnit (?) 이런 느낌이려나..
