@@ -134,3 +134,26 @@ def sign_in(request):
 
 ### Slang
 창모의 노래를 듣다가 One hunnit 이 들려 궁금해서 검색해봤는데 100을 의미한다고 한다. I keep it 100 = I keep it real = I keep it hunnit (?) 이런 느낌이려나..
+
+## 24일
+
+요즘은 정보처리기능사 실기 공부를 열심히 하고 있다. 그리고 오늘은 코딩을 했다!<br>
+오늘 알게된 점은 코드로 설명해보겠다.
+
+```py
+# urls.py
+urlpatterns = [
+    ...,
+    path('<int:diary_id>/', detail, name='detail'),
+]
+
+# views.py
+def detail(request, diary_id):
+    user = get_user(request).id
+    diary = Diary.objects.all().filter(user_id=user, id=diary_id)
+    print(diary_id) # http://127.0.0.1:8000/diary/12/ 이면 console에 12가 찍힌다.
+    return render(request, 'detail.html', {
+        'diary': diary
+    })
+```
+detail 함수에 두번째 인자에 diary_id를 주면 url로부터 id값을 받아올 수 있었다.
