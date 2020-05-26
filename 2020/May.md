@@ -150,10 +150,16 @@ urlpatterns = [
 # views.py
 def detail(request, diary_id):
     user = get_user(request).id
-    diary = Diary.objects.all().filter(user_id=user, id=diary_id)
+    diary = Diary.objects.filter(user_id=user, id=diary_id).get()
     print(diary_id) # http://127.0.0.1:8000/diary/12/ 이면 console에 12가 찍힌다.
     return render(request, 'detail.html', {
         'diary': diary
     })
 ```
 detail 함수에 두번째 인자에 diary_id를 주면 url로부터 id값을 받아올 수 있었다.
+
+## 25일
+
+오늘은 Diary HTML/CSS 작업을 했다. 오랜만에 하는거라 다 까먹었고, 사실 전에는 내가 원하는 위치에 요소들을 넣기 위해서 코드가 어떤 역할을 하는지도 잘 모른 상태에서 때려 박았다. 그래서 같이 미팅하는 분에게 <b>Codeit</b> 계정을 빌려서 자세하게 공부하고 복습하는 시간을 가졌다.
+### 학습한 내용
+`overflow`, `border-radius`, `background-color: transparent`, `box-shadow`, `box-sizing: border-box`
