@@ -13,3 +13,6 @@
 초깃값 2개를 생성(A,B) > `fibonacci_list = []` 생성 > input으로 초깃값, 최종값 받아오고 초깃값 `fibonacci_list.extend((start_value, start_value))` 로 값 추가 > 그리고 초깃값을 sum으로 더해주고 `fibonacci_list`에 추가 > `S = fibonacci_list[n+1] + fibonacci_list[n+2]`를 for문 돌면서 리스트에 추가시키고 최종값에 다다르먼 if문으로 처리하고 출력<br>
 
 아직 해보지는 않았지만 휴가나온 친구들과 잠시 저녁먹으러 가고 이따가 해보거나, 내일 해보려고 한다.
+
+## 4일
+어제 생각한 로직을 오늘 구현해봤다. [GitHub](https://github.com/indante/Fibonacci-Sequence)에 올렸고 MVP 단계이기에 코드가 허접하다(피보나치 원리, 외에 때려박기식 코드). 구글에 피보나치 수열에 대해 검색해보니까 나처럼 코딩의 ㅋ도 모르는 사람이 보기엔 어려웠다. 그래서 재밌을 것 같기도 했고 다른 사람들에게 조금이라도 도움이 되어보자의 취지였다. 그리고 오늘도 역시 알고리즘 공부하고 데이터베이스 개념 및 용어 공부를 했다.
