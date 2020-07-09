@@ -127,8 +127,8 @@ function log(message) {
 TypeScript를 사용하면 개발 속도가 느려질 수는 있겠지만 분명 Code refactoring, Type을 통한 버그 수정이 편해질 것 같다.
 
 ## 9일
-TIL 작성하는 방법을 바꿔야할 것 같다. 내가 공부한 내용을 공유함과 동시에 양질의 내용을 전달하고 싶었는데 지금은 그냥 일기장이나 다름이 없는 것 같다.<br>
-한달 단위로 작성하는 것 보다 1월부터 12월까지의 폴더를 만들고 매일 매일 파일 하나씩 커밋하는게 더 효율적이고 내가 보기에도 편할 것 같다. 내일부터 해야징
+TIL 작성하는 방법을 바꿔야할 것 같다. 내가 공부한 내용을 공유함과 동시에 양질의 내용을 전달하고 싶었는데 지금은 그냥 일기장이나 다름이 없는 것 같다.
+한달 단위로 작성하는 것 보다 1월부터 12월까지의 폴더를 만들고 매일 매일 파일 하나씩 커밋하는게 더 효율적이고 내가 보기에도 편할 것 같다. 내일부터 해야징 ^^7<br>
 오늘은 회사 리스트를 작성하는데 시간을 조금 썼다. 원티드, 로켓펀치, 사람인에서 <b>주니어</b> 산업기능요원을 뽑는 회사 위주로 정리했다.
 그리고 REST API를 정리해둔 slides가 있어서 보는데 영어로 된 부분들이 많길래 영어 공부도 함께 했다.
 
@@ -137,17 +137,17 @@ interoperability: 정보 처리 상호 운용
 
 → a way of providing **interoperability** between computer systems on the Internet.
 
-컴퓨터 시스템과 인터넷 사이에서 정보 처리 상호 운용을 제공해 줌 (X)
+컴퓨터 시스템과 인터넷 사이에서 정보 처리 상호 운용을 제공해 줌 (X) <!-- 내가 한 해석 -->
 
-인터넷상의 컴퓨터 시스템 간에 상호 운용성 을 제공하는 방법 (O)
+인터넷상의 컴퓨터 시스템 간에 상호 운용성 을 제공하는 방법 (O) <!-- 번역기가 한 해석 -->
 
 improve: 개선되다, 나아지다, 향상시키다
 
 → Roy T. Fielding: "How do I **improve** HTTP without breaking the Web?"
 
-Roy T. Fielding: "어떻게 웹에서 멈추지 않고 HTTP를 향상시킬 수 있을까?" (X)
+Roy T. Fielding: "어떻게 웹에서 멈추지 않고 HTTP를 향상시킬 수 있을까?" (X) <!-- 내가 한 해석 -->
 
-Roy T. Fielding: "웹을 중단하지 않고 어떻게 HTTP를 향상시킬 수 있습니까?" (O)
+Roy T. Fielding: "웹을 중단하지 않고 어떻게 HTTP를 향상시킬 수 있습니까?" (O) <!-- 번역기가 한 해석 -->
 
 architectural: 컴퓨터 시스템 설계..?
 
@@ -157,9 +157,9 @@ interaction: 상호 작용
 
 → "Representational State Transfer: An **Architectural** Style for **Distributed** Hypermedia **Interaction**"
 
-REST: 분산된 하이퍼 미디어 상호 작용을 위한 아키텍처 스타일 (X)
+REST: 분산된 하이퍼 미디어 상호 작용을 위한 아키텍처 스타일 (X) <!-- 내가 한 해석 -->
 
-REST: 분산 하이퍼 미디어 상호 작용을 위한 아키텍처 스타일(O)
+REST: 분산 하이퍼 미디어 상호 작용을 위한 아키텍처 스타일(O) <!-- 번역기가 한 해석 -->
 
 driven: 중심의
 
@@ -167,6 +167,6 @@ must be: 이어야 한다
 
 "REST APIs must be hypertext-**driven**"
 
-REST API는 하이퍼 텍스트 중심 이어야 합니다 (O)
+REST API는 하이퍼 텍스트 중심 이어야 합니다 (O) <!-- 내가 한 해석 -->
 ```
 오늘은 요로코롬 공부하고 이제 남은 시간동안 JavaScript 공부를 해야겠다.
